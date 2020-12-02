@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-header">
+      <h4 class="card-title">Percepciones de Amenazas</h4>
+    </div>
+    <div class="card-body">
+      <div style="display: block">
+        <canvas baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          
+          [legend]="barChartLegend"
+          [chartType]="barChartType">
+        </canvas>
+      </div>
+      <p class="card-meta">
+        Las lluvias y heladas son los que han sido percibidos 
+        como mayor amenaza, seguido de las sequías e inundaciones 
+        y finalmente los golpes de calor.
+    </p>
+    </div>
+  </div>

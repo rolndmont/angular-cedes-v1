@@ -1,0 +1,117 @@
+<div class="jumbotron jumbotron-fluid animated fadeIn fast">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <picture>
+            <img src="assets/img/colegioMexico.png" (click)="openModal(template)" [tooltip]="content" placement="bottom"
+              weight="100px" height="80px" alt="Colegio de México">
+          </picture>
+  
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2">
+          <img src="assets/img/unam.png" (click)="un();" [tooltip]="unam" placement="bottom" weight="100px" height="100px"
+            alt="UNAM">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2">
+          <img src="assets/img/ibero.png" (click)="ib();" [tooltip]="ibero" placement="bottom" weight="100px"
+            height="100px" alt="IBERO">
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2">
+          <img src="assets/img/buap.png" (click)="bp();" [tooltip]="buap" placement="bottom" weight="100px" height="100px"
+            alt="BUAP">
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="display-4 ">
+          Taller: Planificación para afrontar los retos del cambio climático</h2>
+      </div>
+  
+      <carousel>
+        <slide *ngFor="let item of imagenes">
+          <img src=" {{ item.imagen }} " alt="first slide" style="display: block; width: 100%;">
+          <div class="carousel-caption d-none d-md-block">
+            <h3> {{ item.titulo }} </h3>
+            <p> {{ item.desc }} </p>
+          </div>
+        </slide>
+      </carousel>
+  
+      <div class="row">
+        <div class="col-12">
+          <h4 class="display-9 ">
+            Centro de Estudios para el Desarrollo Económico y Social (CEDES) de la Facultad de Economía, BUAP</h4>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-6">
+          <h3 class="display-5 ">Organizadores</h3>
+  
+  
+        </div>
+  
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <li [tooltip]="content">El Colegio de México</li>
+          <li [tooltip]="unam">Universidad Nacional Autonoma de México (UNAM): Centro de Ciencias de la Atmósfera</li>
+          <li [tooltip]="ibero">Universidad Ibero Americana Puebla (IBERO)</li>
+          <li [tooltip]="buap">Benemerita Universidad Autonoma de Puebla (BUAP): CEDES</li>
+        </div>
+      </div>
+  
+  
+      <!-- Motivación -->
+      <div class="row">
+        <div class="col-6">
+          <h3>Motivación</h3>
+          <p>
+            El cambio ambiental experimentado en Puebla en las últimas décadas y el que se espera
+            ocurra en las siguientes, hace ineludible que los gobiernos locales <strong>introduzcan en su
+              planeación</strong>
+            acciones encaminadas a reducir el deterioro del media ambiente y <strong>la vulnerabilidad de
+              su población </strong> frente a los impactos del cambio climático.
+          </p>
+          <p>
+            Estas acciones pueden <strong>incorporarse tempranamente</strong> en los proyectos locales a fin de mejorar
+            sus beneficios y hacer compatible la provición de los servicios municipales y la promoción
+            del Desarrollo económico con la <strong>sustentabilidad ambiental.</strong>
+          </p>
+        </div>
+        <div class="col-6">
+          <h3>Objetivos</h3>
+          <p>
+            En el taller se realizará un <strong>balance sobre los retos que supone el cambio climático en
+              Puebla.</strong></p>
+          <p>Se <strong>presentarán instrumentos para el diagnóstico</strong></p>
+          <p><strong>La reglamentación y la búsqueda de financiamiento</strong></p>
+          <p><strong>Se trabajará con autoridades locales en identificar posibles temáticas y ejes de acción para sus
+              proyectos
+              locales.</strong></p>
+          <p>Además de las alcaldías electas, dicho evento contará con la participación de expertos investigadores de las
+            instituciones mencionadas, así como organizaciones civiles.</p>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Esperamos <strong>sea un espacio que permita sentar las bases para una colaboración de más largo
+            plazo.</strong>
+        </h3>
+      </div>
+      <!-- Fin motivacion -->
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <ng-template #template>
+    <div class="modal-body text-center">
+      <p>Está a punto de salir de esta página</p>
+      <p>¿Desea continuar?</p>
+      <button type="button alert-heading" class="btn btn-primary" (click)="confirm()"><a
+          href="https://www.dropbox.com/sh/37qoy07qtn74pvd/AADpxxXkWhei6wc5hjFZusjsa?dl=0" class="alert-link" target="blank" >Yes</a>
+      </button>
+      <button type="button" class="btn btn-danger" (click)="decline()">No</button>
+    </div>
+  </ng-template>

@@ -1,6 +1,6 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MunicipiosService } from "src/app/servicios/municipios.service";
-import { Municipio } from "src/app/model/Municipio";
+import { Municipio } from "src/app/model/municipio";
 import { Router } from "@angular/router";
 
 @Component({

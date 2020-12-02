@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { Municipio } from "../model/Municipio";
+import { Municipio } from "../model/municipio";
 
 
 @Injectable({

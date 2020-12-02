@@ -1,5 +1,4 @@
-
-export interface Municipio{
+export interface Municipio {
     idR:number,
     id:number,
     nombre: string,

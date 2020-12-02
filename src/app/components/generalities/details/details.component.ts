@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
-import { Municipio } from "src/app/model/Municipio";
+import { Municipio } from "src/app/model/municipio";
 import { MunicipiosService } from 'src/app/servicios/municipios.service';
 
 @Component({

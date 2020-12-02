@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 
 // RUTAS
 import { APP_ROUTING } from "./app.routes";
@@ -58,7 +59,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     ModalModule.forRoot(),
     TabsModule.forRoot(),
     CarouselModule.forRoot(),
-    PdfViewerModule
+    PdfViewerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

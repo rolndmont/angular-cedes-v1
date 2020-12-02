@@ -22,10 +22,6 @@ export class DetailsComponent implements OnInit {
     principales:""
   }
 
-  // @Input() idRegion! : number;
-  // @Input() idMun! : number;
-
-  // let idMascota = this.route.snapshot.paramMap.get("id");
 
 
   constructor(private router: Router, private activatedRouter: ActivatedRoute, private _municipioservice: MunicipiosService) { 
@@ -34,18 +30,6 @@ export class DetailsComponent implements OnInit {
    this.activatedRouter.params.subscribe( params =>{
      this.municipioSeleccionado = this._municipioservice.getOneMunicipio(params.idR,params.id);
    });
-
-
-
-
-
-
-
-    // this.activatedRouter.params.subscribe(params => {
-    //   this.municipioSeleccionado = this._municipioservice.getOneMunicipio(params['idR'], params['id']);
-    //   console.log("Params id: " + params['idR']);
-    //   console.log(this.municipioSeleccionado);
-    // });
   }
 
   ngOnInit() {

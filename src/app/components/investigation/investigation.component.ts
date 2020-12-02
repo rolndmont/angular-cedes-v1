@@ -9,9 +9,8 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 export class InvestigationComponent implements OnInit {
   files = [
     { "id": 1, "name": "CEMDA", "description": "CEMDA-Mapeo de financiamiento climático en México", "url": "../assets/pdf/CEMDA.pdf", "image": "../assets/img/cemda.PNG" },
-    { "id": 2, "name": "guia", "description": "Guia de financiamiento climático para entidades federativas", "url": "../assets/pdf/guia.pdf", "image": "../assets/img/guia.png" },
-    { "id": 3, "name": "leyCambio", "description": "Ley de Cambio Climatico del Estado de Puebla", "url": "../assets/pdf/leyCambio.pdf", "image": "../assets/img/leyCambio.jpg" },
-    { "id": 4, "name": "tmf", "description": "Financiamiento internacional para el cambio climático en México", "url": "../assets/pdf/tmf.pdf", "image": "../assets/img/financiamiento.jpg" }
+    { "id": 2, "name": "leyCambio", "description": "Ley de Cambio Climatico del Estado de Puebla", "url": "../assets/pdf/leyCambio.pdf", "image": "../assets/img/leyCambio.jpg" },
+    { "id": 3, "name": "tmf", "description": "Financiamiento internacional para el cambio climático en México", "url": "../assets/pdf/tmf.pdf", "image": "../assets/img/financiamiento.jpg" }
   ];
 
   cambio: Boolean = false;

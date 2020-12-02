@@ -13,7 +13,7 @@ export class InvestigationComponent implements OnInit {
     { "id": 3, "name": "tmf", "description": "Financiamiento internacional para el cambio climático en México", "url": "../assets/pdf/tmf.pdf", "image": "../assets/img/financiamiento.jpg" }
   ];
 
-  cambio: Boolean = false;
+  cambio: boolean = false;
   modalRef!: BsModalRef;
   message!: string;
   url = "../assets/pdf/CEMDA.pdf";

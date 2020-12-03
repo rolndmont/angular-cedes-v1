@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 
 // RUTAS
 import { APP_ROUTING } from "./app.routes";
@@ -30,6 +31,12 @@ import { TwoComponent } from './components/grappcharts/bar/two/two.component';
 // import { TwolineComponent } from './components/grapcharts/line/twoline/twoline.component';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import {MatListModule} from '@angular/material/list';
+
+
 
 @NgModule({
   declarations: [
@@ -58,7 +65,10 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     ModalModule.forRoot(),
     TabsModule.forRoot(),
     CarouselModule.forRoot(),
-    PdfViewerModule
+    PdfViewerModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

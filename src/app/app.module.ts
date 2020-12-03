@@ -31,6 +31,12 @@ import { TwoComponent } from './components/grappcharts/bar/two/two.component';
 // import { TwolineComponent } from './components/grapcharts/line/twoline/twoline.component';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import {MatListModule} from '@angular/material/list';
+
+
 
 @NgModule({
   declarations: [
@@ -60,7 +66,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     TabsModule.forRoot(),
     CarouselModule.forRoot(),
     PdfViewerModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

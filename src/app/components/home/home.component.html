@@ -1,4 +1,4 @@
-<div class="jumbotron jumbotron-fluid animated fadeIn fast">
+
     <div class="container">
       <div class="row">
         <div class="col-3">
@@ -47,26 +47,26 @@
       </div>
   
       <div class="row">
-        <div class="col-6">
+        <div class="col-12">
           <h3 class="display-5 ">Organizadores</h3>
-  
-  
-        </div>
-  
+        </div>  
       </div>
       <div class="row">
-        <div class="col-8">
-          <li [tooltip]="content">El Colegio de México</li>
-          <li [tooltip]="unam">Universidad Nacional Autonoma de México (UNAM): Centro de Ciencias de la Atmósfera</li>
-          <li [tooltip]="ibero">Universidad Ibero Americana Puebla (IBERO)</li>
-          <li [tooltip]="buap">Benemerita Universidad Autonoma de Puebla (BUAP): CEDES</li>
+        <div class="col-md-10 col-sm-12">
+
+          <mat-list role="list">
+            <mat-list-item role="listitem">El Colegio de México</mat-list-item>
+            <mat-list-item role="listitem">Universidad Nacional Autonoma de México (UNAM): Centro de Ciencias de la Atmósfera</mat-list-item>
+            <mat-list-item role="listitem">Universidad Ibero Americana Puebla (IBERO)</mat-list-item>
+            <mat-list-item role="listitem">Benemerita Universidad Autonoma de Puebla (BUAP): CEDES</mat-list-item>
+          </mat-list>
         </div>
       </div>
   
   
       <!-- Motivación -->
       <div class="row">
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
           <h3>Motivación</h3>
           <p>
             El cambio ambiental experimentado en Puebla en las últimas décadas y el que se espera
@@ -81,7 +81,7 @@
             del Desarrollo económico con la <strong>sustentabilidad ambiental.</strong>
           </p>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
           <h3>Objetivos</h3>
           <p>
             En el taller se realizará un <strong>balance sobre los retos que supone el cambio climático en
@@ -102,7 +102,7 @@
       </div>
       <!-- Fin motivacion -->
     </div>
-  </div>
+
   
   <!-- Modal -->
   <ng-template #template>

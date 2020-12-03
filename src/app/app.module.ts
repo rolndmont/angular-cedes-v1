@@ -68,7 +68,7 @@ import {MatListModule} from '@angular/material/list';
     PdfViewerModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

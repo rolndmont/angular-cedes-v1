@@ -8,6 +8,7 @@ import { Router } from "@angular/router";
   templateUrl: './generalities.component.html',
   styleUrls: ['./generalities.component.css']
 })
+
 export class GeneralitiesComponent implements OnInit {
 
   SierraN : Municipio [] = [];
@@ -20,7 +21,9 @@ export class GeneralitiesComponent implements OnInit {
   idRegion!: number;
   idMun!: number;
 
-  constructor(private _municipioService: MunicipiosService, private router:Router) { }
+  constructor(private _municipioService: MunicipiosService, private router:Router) { 
+
+  }
 
   ngOnInit() {
     this.SierraN = this._municipioService.getSierraNorte();

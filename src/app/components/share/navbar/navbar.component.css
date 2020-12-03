@@ -2,3 +2,6 @@
     background-color:#132b40!important;
     background: repeating-linear-gradient(45deg, black, #fbfbfb00 100px);
 }
+.bg-secondary {
+    background-color: #132b40!important;
+  }

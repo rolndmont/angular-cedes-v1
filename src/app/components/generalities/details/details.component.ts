@@ -10,26 +10,26 @@ import { MunicipiosService } from 'src/app/servicios/municipios.service';
 })
 export class DetailsComponent implements OnInit {
 
-  municipioSeleccionado:  Municipio ={
-    idR:0,
-    id:0,
+  municipioSeleccionado: Municipio = {
+    idR: 0,
+    id: 0,
     nombre: "",
     imagen: "",
-    descripcion:"", 
+    descripcion: "",
     extension: "",
     clima: "",
     recursos: "",
-    principales:""
+    principales: ""
   }
 
 
 
-  constructor(private router: Router, private activatedRouter: ActivatedRoute, private _municipioservice: MunicipiosService) { 
+  constructor(private router: Router, private activatedRouter: ActivatedRoute, private _municipioservice: MunicipiosService) {
 
 
-   this.activatedRouter.params.subscribe( params =>{
-     this.municipioSeleccionado = this._municipioservice.getOneMunicipio(params.idR,params.id);
-   });
+    this.activatedRouter.params.subscribe(params => {
+      this.municipioSeleccionado = this._municipioservice.getOneMunicipio(params.idR, params.id);
+    });
   }
 
   ngOnInit() {

@@ -27,7 +27,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ChartsModule } from 'ng2-charts';
 import { OneComponent } from './components/grappcharts/bar/one/one.component';
 import { TwoComponent } from './components/grappcharts/bar/two/two.component';
-// import { OnelineComponent } from './components/grapcharts/line/oneline/oneline.component';
+// import { LineComponent } from './components/grappcharts/line/line.component';
 // import { TwolineComponent } from './components/grapcharts/line/twoline/twoline.component';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -54,7 +54,7 @@ import {MatListModule} from '@angular/material/list';
     DetailsComponent,
     OneComponent,
     TwoComponent
-    // OnelineComponent,
+    // LineComponent
     // TwolineComponent
   ],
   imports: [

@@ -1,1 +1,13 @@
-<p>line works!</p>
+<div class="flex">
+        <div class="flex-item">
+          <div style="display: block;">
+          <canvas baseChart width="400" height="300"
+                      [datasets]="lineChartData"
+                      [labels]="nuevosLabes"
+                      [options]="lineChartOptions"
+                      [colors]="lineChartColors"
+                      [legend]="lineChartLegend"
+                      [chartType]="lineChartType"></canvas>
+          </div>
+        </div>
+      </div>

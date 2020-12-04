@@ -1,23 +1,32 @@
 <div class="container animated fadeIn fast">
     <h3 class="text-center">{{ municipioSeleccionado.nombre }} </h3>
     <div class="row">
-            <div class="col-md-7 col-sm-12">
-                <img [src]="municipioSeleccionado.imagen" alt="{{municipioSeleccionado.nombre}}">
-                <h4>Localización:</h4>
-                <p class="text-justify"> {{ municipioSeleccionado.descripcion }} </p>
-                <h4>Extensión:</h4>
-                <p class="text-justify"> {{ municipioSeleccionado.extension }} </p>
-            </div>
-            <div class="col-md-5 col-sm-12">
-                <h4>Clima:</h4>
-                <p class="text-justify"> {{ municipioSeleccionado.clima }} </p>
-                <h4> Recursos Naturales: </h4>
-                <p class="text-justify"> {{ municipioSeleccionado.recursos }} </p>
-                <h4>Principales Ecosistemas: </h4>
-                <p class="text-justify"> {{ municipioSeleccionado.principales }} </p>
+        <div class="col-md-7 col-sm-12">
+            <img [src]="municipioSeleccionado.imagen" alt="{{municipioSeleccionado.nombre}}">
+            <h4>Localización:</h4>
+            <p class="text-justify"> {{ municipioSeleccionado.descripcion }} </p>
+            <h4>Extensión:</h4>
+            <p class="text-justify"> {{ municipioSeleccionado.extension }} </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <h4>Clima:</h4>
+            <p class="text-justify"> {{ municipioSeleccionado.clima }} </p>
+            <h4> Recursos Naturales: </h4>
+            <p class="text-justify"> {{ municipioSeleccionado.recursos }} </p>
+            <h4>Principales Ecosistemas: </h4>
+            <p class="text-justify"> {{ municipioSeleccionado.principales }} </p>
             <button type="button" class="btn btn-outline-danger float-right " (click)="back()"> Regresar </button>
         </div>
     </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h4> Resultados obtenidos en el taller: </h4>
+            <app-line></app-line>
+        </div>
+    </div>
+
+
 </div>
 <hr>
 <div>
@@ -28,7 +37,7 @@
                 Estado de Puebla.
             </p>
             <p>
-            http://www.inafed.gob.mx/work/enciclopedia/EMM21puebla/municipios/municipios.html</p>
+                http://www.inafed.gob.mx/work/enciclopedia/EMM21puebla/municipios/municipios.html</p>
         </div>
     </div>
 </div>

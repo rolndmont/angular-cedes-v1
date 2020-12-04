@@ -9,9 +9,7 @@
     background-color: rgba(156, 161, 161, 0.089);
   }
   
-  .bg-secondary {
-    background-color: #132b40!important;
-  }
+  
   /* 
   .navbar.scrolling-navbar {
     transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -78,3 +76,5 @@
   .navbar.navbar-expand-lg{
     height: 60px !important;
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

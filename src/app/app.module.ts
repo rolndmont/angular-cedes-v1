@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 
 // RUTAS
 import { APP_ROUTING } from "./app.routes";
@@ -26,10 +27,16 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ChartsModule } from 'ng2-charts';
 import { OneComponent } from './components/grappcharts/bar/one/one.component';
 import { TwoComponent } from './components/grappcharts/bar/two/two.component';
-// import { OnelineComponent } from './components/grapcharts/line/oneline/oneline.component';
+// import { LineComponent } from './components/grappcharts/line/line.component';
 // import { TwolineComponent } from './components/grapcharts/line/twoline/twoline.component';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import {MatListModule} from '@angular/material/list';
+
+
 
 @NgModule({
   declarations: [
@@ -47,7 +54,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     DetailsComponent,
     OneComponent,
     TwoComponent
-    // OnelineComponent,
+    // LineComponent
     // TwolineComponent
   ],
   imports: [
@@ -58,7 +65,10 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     ModalModule.forRoot(),
     TabsModule.forRoot(),
     CarouselModule.forRoot(),
-    PdfViewerModule
+    PdfViewerModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

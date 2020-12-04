@@ -75,11 +75,12 @@ export class HomeComponent implements OnInit {
     }
   ];
 
+  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+
+  
   constructor(private router:Router, private modalService: BsModalService,private _municipioService: MunicipiosService) { }
 
   ngOnInit() {
-    // this.image = this._municipioService.getImagen();
-    // console.log(this.image);
     console.log(this.imagenes);
   }
 

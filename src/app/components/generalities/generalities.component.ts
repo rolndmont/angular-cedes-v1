@@ -8,19 +8,22 @@ import { Router } from "@angular/router";
   templateUrl: './generalities.component.html',
   styleUrls: ['./generalities.component.css']
 })
+
 export class GeneralitiesComponent implements OnInit {
 
-  SierraN : Municipio [] = [];
-  SieraNor : Municipio [] = [];
-  Angel : Municipio [] = [];
-  Tehua : Municipio [] = [];
-  Mixteca: Municipio [] = [];
+  SierraN: Municipio[] = [];
+  SieraNor: Municipio[] = [];
+  Angel: Municipio[] = [];
+  Tehua: Municipio[] = [];
+  Mixteca: Municipio[] = [];
 
   seleccion: boolean = false;
   idRegion!: number;
   idMun!: number;
 
-  constructor(private _municipioService: MunicipiosService, private router:Router) { }
+  constructor(private _municipioService: MunicipiosService, private router: Router) {
+
+  }
 
   ngOnInit() {
     this.SierraN = this._municipioService.getSierraNorte();
@@ -28,42 +31,43 @@ export class GeneralitiesComponent implements OnInit {
     this.Angel = this._municipioService.getAng();
     this.Tehua = this._municipioService.getT();
     this.Mixteca = this._municipioService.getMIX();
-    
+
     console.log(this.SierraN);
     console.log(this.SieraNor);
     console.log(this.Mixteca);
   }
-
   
-  selectReg1( obj:Municipio ){
+
+
+  selectReg1(obj: Municipio) {
     this.idRegion = obj.idR;
     this.idMun = obj.id;
-    console.log( "Objeto: "+obj.idR,obj.id);
-    this.router.navigate( ['/generalities/details',this.idRegion,this.idMun]);
+    console.log("Objeto: " + obj.idR, obj.id);
+    this.router.navigate(['/generalities/details', this.idRegion, this.idMun]);
   }
-  selectReg2( obj:Municipio ){
+  selectReg2(obj: Municipio) {
     this.idRegion = obj.idR;
     this.idMun = obj.id;
     // console.log( "Objeto: "+objeto.nombre);
-    this.router.navigate( ['/generalities/details',this.idRegion,this.idMun]);
+    this.router.navigate(['/generalities/details', this.idRegion, this.idMun]);
   }
-  selectReg3(  obj:Municipio){
+  selectReg3(obj: Municipio) {
     this.idRegion = obj.idR;
     this.idMun = obj.id;
     // console.log( "Objeto: "+objeto.nombre);
-    this.router.navigate( ['/generalities/details',this.idRegion,this.idMun]);
+    this.router.navigate(['/generalities/details', this.idRegion, this.idMun]);
   }
-  selectReg4( obj:Municipio ){
+  selectReg4(obj: Municipio) {
     this.idRegion = obj.idR;
     this.idMun = obj.id;
     // console.log( "Objeto: "+objeto.nombre);
-    this.router.navigate( ['/generalities/details',this.idRegion,this.idMun]);
+    this.router.navigate(['/generalities/details', this.idRegion, this.idMun]);
   }
-  selectReg5( obj:Municipio ){
+  selectReg5(obj: Municipio) {
     this.idRegion = obj.idR;
     this.idMun = obj.id;
     // console.log( "Objeto: "+objeto.nombre);
-    this.router.navigate( ['/generalities/details',this.idRegion,this.idMun]);
+    this.router.navigate(['/generalities/details', this.idRegion, this.idMun]);
   }
 
 }

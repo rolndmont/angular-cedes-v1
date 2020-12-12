@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
 
 // RUTAS
 import { APP_ROUTING } from "./app.routes";
@@ -35,6 +36,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import {MatListModule} from '@angular/material/list';
+import { DetailRegionComponent } from './components/generalities/detail-region/detail-region.component';
 
 
 
@@ -53,13 +55,16 @@ import {MatListModule} from '@angular/material/list';
     GrappchartsComponent,
     DetailsComponent,
     OneComponent,
-    TwoComponent
+    TwoComponent,
+    DetailRegionComponent
     // LineComponent
     // TwolineComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     APP_ROUTING,
+    MatListModule,
     ChartsModule,
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
@@ -67,8 +72,7 @@ import {MatListModule} from '@angular/material/list';
     CarouselModule.forRoot(),
     PdfViewerModule,
     FormsModule,
-    BrowserAnimationsModule,
-    MatListModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

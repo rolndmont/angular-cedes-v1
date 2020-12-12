@@ -1,0 +1,29 @@
+<div class="row">
+        <div class="col-md-12">
+                <h3 class="text-center">
+                        {{ Region.titulo }}
+                </h3>
+        </div>
+</div>
+<hr>
+<div class="row">
+        <div class="col-md-12">
+                <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-4">
+                                    <img [src]=" Region.imagen" weight="100%" height="100%" alt="Programa del Taller">
+                                </div>
+                            <div class="col-md-8">
+                              <p class="card-text text-justify">{{ Region.descripcion }}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+</div>
+<div class="row">
+        <div class="col-md-12">
+                <button type="button" class="btn btn-outline-danger  " (click)="back()">Regresar</button>
+        </div>
+</div>

@@ -32,11 +32,36 @@ export class GeneralitiesComponent implements OnInit {
     this.Tehua = this._municipioService.getT();
     this.Mixteca = this._municipioService.getMIX();
 
-    console.log(this.SierraN);
-    console.log(this.SieraNor);
-    console.log(this.Mixteca);
+    // console.log(this.SierraN);
+    // console.log(this.SieraNor);
+    // console.log(this.Mixteca);
   }
   
+  viewRegion( identiRegion: number ){
+    let id = identiRegion;
+
+    if ( id == 1) {
+      console.log("Region seleccionado Uno");
+      this.router.navigate(['/generalities/detailRegion', id]);
+    }
+    if ( id == 2) {
+      console.log("Region seleccionado 2");
+      this.router.navigate(['/generalities/detailRegion', id]);
+    }
+    if( id == 4){
+      console.log("Region seleccionado 4");
+      this.router.navigate(['/generalities/detailRegion', id]);
+    }
+    if( id == 6){
+      console.log("Region seleccionado 6");
+      this.router.navigate(['/generalities/detailRegion', id]);
+    }
+    if (id == 7){
+      console.log("Region seleccionado 7");
+      this.router.navigate(['/generalities/detailRegion', id]);
+    }
+       
+  }
 
 
   selectReg1(obj: Municipio) {

@@ -1,8 +1,16 @@
-
-<app-navbar></app-navbar>
-
-<div class="container-md main-container">
-    <router-outlet></router-outlet>
+<div class="row navM">
+    <div class="col-md-12">
+        <app-navbar ></app-navbar>
+    </div>
+    
 </div>
-
-<app-footer></app-footer>
+<div class="row bodyM">
+    <div class="col-md-12">
+        <router-outlet ></router-outlet>
+    </div>
+</div>
+<div class="row footerM">
+<div class="col-md-12">
+    <app-footer></app-footer>
+</div>
+</div>

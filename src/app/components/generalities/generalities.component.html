@@ -1,114 +1,90 @@
-
-<div class="container animated fadeIn fast cedes">
-    <div class="row text-center">
-        <h3 >Municipios participantes por región</h3>
+<div class="row">
+    <div class="col-12">
+        <h4 class="display-9 text-center ">Municipios participantes por región </h4>
     </div>
-    
-    <div class="row">
-        <div class="col-md-7 col-sm-12  border-primary   p-3 mb-5 bg-white rounded ">
-            <img src="assets/img/mapa.jpg" alt="">
-        </div>
-        <div class="col-md-5 col-ms-12 table-responsive border-primary  p-3 mb-5 bg-white rounded">
-            
-            <table class="table table-striped">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Región</th>
-                        <th scope="col">Municipios</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">I</th>
-                        <td>Sierra Norte</td>
-                        <td>
-                            <button type="button" *ngFor="let srn of SierraN" (click)="selectReg1(srn)"
-                                class="btn btn-light"> 
-                                {{srn.nombre}}
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">II</th>
-                        <td>Sierra Nororiental</td>
-                        <td>
-                            <button type="button" *ngFor="let srnor of SieraNor" (click)="selectReg2( srnor )"
-                                class="btn btn-light">
-                                {{srnor.nombre}}
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">IV</th>
-                        <td>Angelopolis</td>
-                        <td>
-                            <button type="button" *ngFor="let ang of Angel" (click)="selectReg3( ang )"
-                                class="btn btn-light">
-                                {{ang.nombre}}
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">VI</th>
-                        <td>Mixteca</td>
-                        <td>
-                            <button type="button" *ngFor="let mixt of Mixteca" (click)="selectReg4( mixt )"
-                                class="btn btn-light">
-                                {{mixt.nombre}}
-                            </button>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">VII</th>
-                        <td>Tehuacan y Sierra Negra</td>
-                        <td>
-                            <button type="button" *ngFor="let t of Tehua" (click)="selectReg5( t )"
-                                class="btn btn-light">
-                                {{t.nombre}}
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <hr>
-
 </div>
-
-<!-- <div class="container animated fadeIn fast cedes" *ngIf="seleccion">
-    <div class="row">
-        <div class="col-4">
-            <h3>Descripción de Municipio</h3>
-        </div>
-        <div class="col-8">
-            <h3 class="text-center"> {{ nombre }} </h3>
-        </div>
-
-        <div class="row">
-            <div class="col-6">
-                <img [src]="imagen" alt="{{nombre}}">
-                <h4>Localización:</h4>
-                <p class="text-justify"> {{ descripcion }} </p>
-                <h4>Extensión:</h4>
-                <p class="text-justify"> {{ extension }} </p>
-            </div>
-            <div class="col-6">
-                <h4>Clima:</h4>
-                <p class="text-justify"> {{ clima }} </p>
-                <h4> Recursos Naturales: </h4>
-                <p class="text-justify"> {{ recursos }} </p>
-                <h4>Principales Ecosistemas: </h4>
-                <p class="text-justify"> {{ principales }} </p>
-            </div>
-        </div>
-
-
-
-
-        <button type="button" class="btn btn-primary" (click)="back()"> Regresar </button>
-
+<div class="row ">
+    <div class="col-md-7 col-sm-12  border-primary   p-3 mb-5  rounded ">
+        <img src="assets/images/mapa_puebla.png" alt="">
     </div>
-</div> -->
+    <div class="col-md-5 col-ms-12 table-responsive border-primary  p-3 mb-5  rounded">
+
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Región</th>
+                    <th scope="col">Municipios</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">I</th>
+                    <td>
+                        <button type="button" class="btn btn-outlet-primary" (click)="viewRegion( 1 )">Sierra Norte</button>
+                    </td>
+                    <td>
+                        <mat-selection-list [multiple]="false">
+                            <mat-list-option *ngFor="let srn of SierraN" (click)="selectReg1(srn)">
+                                {{srn.nombre}}
+                            </mat-list-option>
+                        </mat-selection-list>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">II</th>
+                    <td>
+                        <button type="button" class="btn btn-outlet-primary"  (click)="viewRegion( 2 )">Sierra Nororiental</button>
+                    </td>
+                    <td>
+                        <mat-selection-list [multiple]="false">
+                            <mat-list-option *ngFor="let srnor of SieraNor" (click)="selectReg2(srnor)">
+                                {{srnor.nombre}}
+                            </mat-list-option>
+                        </mat-selection-list>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">IV</th>
+                    <td>
+                        <button type="button" class="btn btn-outlet-primary"  (click)="viewRegion( 4 )">Angelopolis</button>
+                    </td>
+                    <td>
+                        <mat-selection-list [multiple]="false">
+                            <mat-list-option *ngFor="let ang of Angel" (click)="selectReg3(ang)">
+                                {{ang.nombre}}
+                            </mat-list-option>
+                        </mat-selection-list>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">VI</th>
+                    <td>
+                        <button type="button" class="btn btn-outlet-primary"  (click)="viewRegion( 6 )">Mixteca</button>
+                    </td>
+                    <td>
+                        <mat-selection-list [multiple]="false">
+                            <mat-list-option *ngFor="let mixt of Mixteca" (click)="selectReg4(mixt)">
+                                {{mixt.nombre}}
+                            </mat-list-option>
+                        </mat-selection-list>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">VII</th>
+                    <td>
+                        <button type="button" class="btn btn-outlet-primary"  (click)="viewRegion( 7 )">Tehuacan y Sierra Negra</button>
+                    </td>
+                    <td>
+                        <mat-selection-list [multiple]="false">
+                            <mat-list-option *ngFor="let t of Tehua" (click)="selectReg5(t)">
+                                {{t.nombre}}
+                            </mat-list-option>
+                        </mat-selection-list>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<hr>

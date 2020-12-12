@@ -1,7 +1,6 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { Router } from "@angular/router";
-import { CarouselConfig } from 'ngx-bootstrap/carousel';
 import { MunicipiosService } from "src/app/servicios/municipios.service";
 
 @Component({
@@ -17,6 +16,8 @@ export class HomeComponent implements OnInit {
   modalRef!: BsModalRef;
   message!: string;
   image: any [] = [];
+
+  url: string = "";
 
   imagenes = [
     {
@@ -75,11 +76,12 @@ export class HomeComponent implements OnInit {
     }
   ];
 
+  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+
+  
   constructor(private router:Router, private modalService: BsModalService,private _municipioService: MunicipiosService) { }
 
   ngOnInit() {
-    // this.image = this._municipioService.getImagen();
-    // console.log(this.image);
     console.log(this.imagenes);
   }
 
@@ -109,6 +111,18 @@ export class HomeComponent implements OnInit {
   decline(): void {
     this.message = 'Declined!';
     this.modalRef.hide();
+  }
+
+  viewProgram(){
+    console.log("Ver programa del evento");
+    this.url = "../assets/pdf/programa_taller.pdf";
+    this.router.navigate(['/investigation',this.url]);
+  }
+
+  viewDoc(){
+    console.log("viewer Document")
+    this.url = "../assets/pdf/Marco_Juridico.pdf";
+    this.router.navigate(['/investigation',this.url]);
   }
 
 

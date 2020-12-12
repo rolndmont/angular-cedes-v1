@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
 
 // RUTAS
 import { APP_ROUTING } from "./app.routes";
@@ -26,10 +28,17 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ChartsModule } from 'ng2-charts';
 import { OneComponent } from './components/grappcharts/bar/one/one.component';
 import { TwoComponent } from './components/grappcharts/bar/two/two.component';
-// import { OnelineComponent } from './components/grapcharts/line/oneline/oneline.component';
+// import { LineComponent } from './components/grappcharts/line/line.component';
 // import { TwolineComponent } from './components/grapcharts/line/twoline/twoline.component';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import {MatListModule} from '@angular/material/list';
+import { DetailRegionComponent } from './components/generalities/detail-region/detail-region.component';
+
+
 
 @NgModule({
   declarations: [
@@ -46,19 +55,24 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     GrappchartsComponent,
     DetailsComponent,
     OneComponent,
-    TwoComponent
-    // OnelineComponent,
+    TwoComponent,
+    DetailRegionComponent
+    // LineComponent
     // TwolineComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     APP_ROUTING,
+    MatListModule,
     ChartsModule,
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
     TabsModule.forRoot(),
     CarouselModule.forRoot(),
-    PdfViewerModule
+    PdfViewerModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

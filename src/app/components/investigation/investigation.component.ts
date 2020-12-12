@@ -1,5 +1,8 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { MunicipiosService } from "src/app/servicios/municipios.service";
+import { Files } from "src/app/model/municipio";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
   selector: 'app-investigation',
@@ -7,16 +10,12 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
   styleUrls: ['./investigation.component.css']
 })
 export class InvestigationComponent implements OnInit {
-  files = [
-    { "id": 1, "name": "CEMDA", "description": "CEMDA-Mapeo de financiamiento climático en México", "url": "../assets/pdf/CEMDA.pdf", "image": "../assets/img/cemda.PNG" },
-    { "id": 2, "name": "leyCambio", "description": "Ley de Cambio Climatico del Estado de Puebla", "url": "../assets/pdf/leyCambio.pdf", "image": "../assets/img/leyCambio.jpg" },
-    { "id": 3, "name": "tmf", "description": "Financiamiento internacional para el cambio climático en México", "url": "../assets/pdf/tmf.pdf", "image": "../assets/img/financiamiento.jpg" }
-  ];
+  Files: Files[] = [];
 
   cambio: boolean = false;
   modalRef!: BsModalRef;
   message!: string;
-  url = "../assets/pdf/CEMDA.pdf";
+  url = ""; //Archivo cargado por default
   page: number = 1;
   totalPages!: number;
   isLoaded: boolean = false;
@@ -24,9 +23,24 @@ export class InvestigationComponent implements OnInit {
 
 
 
-  constructor(private modalService: BsModalService) { }
+  constructor(private modalService: BsModalService, private _municipioService: MunicipiosService, private router: Router, private activatedRouter: ActivatedRoute) {
+
+    this.activatedRouter.params.subscribe(params => {
+      this.url = params.url;
+
+      if (this.url == null) {
+        this.url = "../assets/pdf/Marco_Juridico.pdf";
+      }
+    });
+
+
+  }
 
   ngOnInit() {
+    console.log("Inciando la carga de los pdf");
+    this.Files = this._municipioService.getFilesPDD();
+    console.log(this.Files);
+    
   }
 
   afterLoadComplete(pdfData: any) {

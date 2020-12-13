@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { from } from 'rxjs';
 import { Municipio, Files, Regiones } from "../model/municipio";
 
 

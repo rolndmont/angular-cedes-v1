@@ -23,6 +23,11 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+
+// Angular material
+import {MatExpansionModule} from '@angular/material/expansion';
+
 
 // Charts
 import { ChartsModule } from 'ng2-charts';
@@ -37,7 +42,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatListModule} from '@angular/material/list';
 import { DetailRegionComponent } from './components/generalities/detail-region/detail-region.component';
-
+import { PDDComponent } from './components/pdd/pdd.component';
+ 
 
 
 @NgModule({
@@ -56,7 +62,8 @@ import { DetailRegionComponent } from './components/generalities/detail-region/d
     DetailsComponent,
     OneComponent,
     TwoComponent,
-    DetailRegionComponent
+    DetailRegionComponent,
+    PDDComponent
     // LineComponent
     // TwolineComponent
   ],
@@ -72,7 +79,9 @@ import { DetailRegionComponent } from './components/generalities/detail-region/d
     CarouselModule.forRoot(),
     PdfViewerModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatExpansionModule,
+    NgxExtendedPdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,6 +13,17 @@ export class SeminariesComponent implements OnInit {
    // declaración de varibales
    Files: Files[] = [];
    FileQ: Files [] = [];
+   panelOpenState = false;
+
+
+   cambio: boolean = false;
+   message!: string;
+   url = "../assets/pdf/Marco_Juridico.pdf";
+   page: number = 1;
+   totalPages!: number;
+   isLoaded: boolean = false;
+   zoom_in: number = 1;
+
 
   constructor( private router: Router, private activatedRouter: ActivatedRoute, private _municipioservice: MunicipiosService ) {
     
@@ -28,9 +39,34 @@ export class SeminariesComponent implements OnInit {
       k++;
     }
     console.log(this.FileQ);
-    
-    k = 0;
+  
   }
 
+  afterLoadComplete(pdfData: any) {
+    this.totalPages = pdfData.numPages;
+    this.isLoaded = true;
+  }
+
+  mundo(nameF: string) {
+    console.log("mundo");
+    
+    this.url = nameF;
+  }
+
+  nextPage() {
+    this.page++;
+  }
+
+  prevPage() {
+    this.page--;
+  }
+
+  zoomIn() {
+    this.zoom_in += 0.1;
+  }
+
+  zoomOut() {
+    this.zoom_in -= 0.1;
+  }
 
 }

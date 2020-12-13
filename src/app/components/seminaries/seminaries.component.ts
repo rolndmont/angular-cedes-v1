@@ -24,6 +24,11 @@ export class SeminariesComponent implements OnInit {
    isLoaded: boolean = false;
    zoom_in: number = 1;
 
+    urlpdd: string = "";
+
+    quiz1: string ="";
+    quiz2: string ="";
+
 
   constructor( private router: Router, private activatedRouter: ActivatedRoute, private _municipioservice: MunicipiosService ) {
     
@@ -39,6 +44,7 @@ export class SeminariesComponent implements OnInit {
       k++;
     }
     console.log(this.FileQ);
+
   
   }
 
@@ -48,7 +54,7 @@ export class SeminariesComponent implements OnInit {
   }
 
   mundo(nameF: string) {
-    console.log("mundo");
+    console.log( nameF);
     
     this.url = nameF;
   }

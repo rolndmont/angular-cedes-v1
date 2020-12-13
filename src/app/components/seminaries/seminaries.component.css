@@ -3,14 +3,10 @@
 }
 
 .mat-expansion-panel-header-description, .mat-expansion-indicator::after {
-        color: #3a5c7d;
+        color: #ffffff;
 }
 
 .mat-expansion-panel {
-        background: #fdfdfd;
+        background: #9a9a9a;
         color: #191a1b;
-}
-
-expansion-indicator::after {
-        color: #131415 !important;
 }

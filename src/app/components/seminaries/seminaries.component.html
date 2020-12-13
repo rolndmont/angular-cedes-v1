@@ -20,10 +20,15 @@
                                     <mat-panel-description>
                                         Aplicado a representantes de municipios
                                     </mat-panel-description>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            
+                                        </div>
+                                    </div>
                                 </mat-expansion-panel-header>
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <app-pdd></app-pdd>
+                                        <app-pdd [url] = "url" ></app-pdd>
                                     </div>
                                     <div class="col-md-4 col-sm-12">
                                         <div class="row">
@@ -38,8 +43,7 @@
                                                                     alt=""></div>
                                                             <div class="col-8">
                                                                 <p class="card-text">{{ item.description }}
-                                                                    <button class="btn btn-outline-primary btn-block"
-                                                                        (click)="mundo( item.url )">
+                                                                    <button class="btn btn-outline-primary btn-block" (click)="mundo( item.url )">
                                                                         ver...
                                                                     </button>
                                                                 </p>

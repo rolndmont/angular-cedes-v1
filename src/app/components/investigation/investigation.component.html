@@ -5,22 +5,7 @@
       <div class="col-md-8 col-sm-12">
 
         <app-pdd [url] = " url"></app-pdd>
-        <!-- <div class="form-row align-items-center" *ngIf="isLoaded" style="text-align: center;">
-          <div class="col-auto"><button class="btn btn-outline-primary btn-sm btn-block" (click)="prevPage()"
-              [disabled]="page === 1"><i class="fas fa-angle-double-left"></i></button></div>
-          <div class="col-auto"><span class="span">{{ page }} / {{ totalPages }}</span></div>
-          <div class="col-auto"><button class="btn btn-outline-primary btn-sm btn-block" (click)="nextPage()"
-              [disabled]="page === totalPages"><i class="fas fa-angle-double-right"></i></button></div>
-          <div class="col-auto"><button class="btn btn-outline-primary btn-sm btn-block" (click)="zoomOut()"
-              [disabled]="zoom_in === 0.5"><i class="fas fa-search-minus"></i></button></div>
-          <div class="col-auto"><span class="span"> {{ zoom_in }} </span></div>
-          <div class="col-auto"><button class="btn btn-outline-primary btn-sm btn-block" (click)="zoomIn()"
-              [disabled]="zoom_in === 2"> <i class="fas fa-search-plus"></i></button></div>
-        </div>
 
-        <pdf-viewer class="visor" src="{{ url }}" [show-all]="false" [show-borders]="false" [page]="page"
-          [original-size]="false" [autoresize]="true" [zoom]="zoom_in"
-          (after-load-complete)="afterLoadComplete($event)"></pdf-viewer> -->
       </div>
 
       <div class="col-md-4 col-sm-12">
@@ -50,3 +35,21 @@
     </div>
   </tab>
 </tabset>
+
+
+        <!-- <div class="form-row align-items-center" *ngIf="isLoaded" style="text-align: center;">
+          <div class="col-auto"><button class="btn btn-outline-primary btn-sm btn-block" (click)="prevPage()"
+              [disabled]="page === 1"><i class="fas fa-angle-double-left"></i></button></div>
+          <div class="col-auto"><span class="span">{{ page }} / {{ totalPages }}</span></div>
+          <div class="col-auto"><button class="btn btn-outline-primary btn-sm btn-block" (click)="nextPage()"
+              [disabled]="page === totalPages"><i class="fas fa-angle-double-right"></i></button></div>
+          <div class="col-auto"><button class="btn btn-outline-primary btn-sm btn-block" (click)="zoomOut()"
+              [disabled]="zoom_in === 0.5"><i class="fas fa-search-minus"></i></button></div>
+          <div class="col-auto"><span class="span"> {{ zoom_in }} </span></div>
+          <div class="col-auto"><button class="btn btn-outline-primary btn-sm btn-block" (click)="zoomIn()"
+              [disabled]="zoom_in === 2"> <i class="fas fa-search-plus"></i></button></div>
+        </div>
+
+        <pdf-viewer class="visor" src="{{ url }}" [show-all]="false" [show-borders]="false" [page]="page"
+          [original-size]="false" [autoresize]="true" [zoom]="zoom_in"
+          (after-load-complete)="afterLoadComplete($event)"></pdf-viewer> -->

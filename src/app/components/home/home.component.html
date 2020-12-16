@@ -1,24 +1,24 @@
 <div class="container-fluid">
   <!-- logos de instituciones oraganizadoras -->
-  <div class="row">
-    <div class="col-md-3 col-sm-3">
+  <div class="row justify-content-center">
+    <div class="col-md-3 col-sm-6">
       <picture>
         <img src="assets/img/colegioMexico.png" (click)="openModal(template)" [tooltip]="content" placement="bottom"
           weight="100px" height="80px" alt="Colegio de México">
       </picture>
     </div>
-    <div class="col-md-1 col-sm-0"></div>
-    <div class="col-md-2 col-sm-3">
+    <!-- <div class="col-md-1 col-sm-0"></div> -->
+    <div class="col-md-2 col-sm-6">
       <img src="assets/img/unam.png" (click)="un();" [tooltip]="unam" placement="bottom" weight="100px" height="100px"
         alt="UNAM">
     </div>
-    <div class="col-md-1 col-sm-0"></div>
-    <div class="col-md-2 col-sm-3">
+    <!-- <div class="col-md-1 col-sm-0"></div> -->
+    <div class="col-md-2 col-sm-6">
       <img src="assets/img/ibero.png" (click)="ib();" [tooltip]="ibero" placement="bottom" weight="100px" height="100px"
         alt="IBERO">
     </div>
-    <div class="col-md-1 col-sm-0"></div>
-    <div class="col-md-2 col-sm-3">
+    <!-- <div class="col-md-1 col-sm-0"></div> -->
+    <div class="col-md-2 col-sm-6">
       <img src="assets/img/buap.png" (click)="bp();" [tooltip]="buap" placement="bottom" weight="100px" height="100px"
         alt="BUAP">
     </div>
@@ -53,13 +53,21 @@
       <div class="card">
         <div class="card-body">
           <div class="row">
-            <div class="col-md-8"><img src="assets/img/programa_taller.jpg" weight="100%" height="100%" alt="Programa del Taller"></div>
-            <div class="col-md-4">
+            <div class="col-md-8">
+              <!-- <img src="assets/img/programa_taller.jpg" weight="100%" height="100%" alt="Programa del Taller"> -->
+              <img src="assets/img/programa_taller.jpg" class="img-fluid" alt="Responsive image">
+              <!-- <figure class="figure">
+                <img src="..." class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+              </figure> -->
+            </div>
+            <div class="col-md-4 col-sm-12">
               <p class="card-text text-center">Programa del Taller 28 de noviembre 2018
                 <button class="btn btn-outline-primary btn-block" (click)="viewProgram( )">
                   <i class="fas fa-book-open"></i>
                   ver programa
-                </button></p>
+                </button>
+              </p>
             </div>
           </div>
         </div>
@@ -91,7 +99,7 @@
   <div class="row">
     <div class="col-md-12 col-sm-12">
       <h3>Motivación</h3>
-      <p>
+      <p class="text-justify">
         El cambio ambiental experimentado en Puebla en las últimas décadas y el que se espera
         ocurra en las siguientes, hace ineludible que los gobiernos locales introduzcan en su
         planeación acciones encaminadas a reducir el deterioro del media ambiente y la vulnerabilidad de
@@ -101,15 +109,15 @@
         del Desarrollo económico con la sustentabilidad ambiental.
       </p>
       <h3>Objetivos</h3>
-      <p>
+      <p class="text-justify">
         En el taller se realizará un balance sobre los retos que supone el cambio climático en
         Puebla.</p>
-      <p>1.- Se presentarán instrumentos para el diagnóstico</p>
-      <p>2.- La reglamentación y la búsqueda de financiamiento</p>
-      <p>3.- Se trabajará con autoridades locales en identificar posibles temáticas y ejes de acción para sus
+      <p class="text-justify">1.- Se presentarán instrumentos para el diagnóstico</p>
+      <p class="text-justify">2.- La reglamentación y la búsqueda de financiamiento</p>
+      <p class="text-justify">3.- Se trabajará con autoridades locales en identificar posibles temáticas y ejes de acción para sus
         proyectos
         locales.</p>
-      <p>Además de las alcaldías electas, dicho evento contará con la participación de expertos investigadores de las
+      <p class="text-justify">Además de las alcaldías electas, dicho evento contará con la participación de expertos investigadores de las
         instituciones mencionadas, así como organizaciones civiles.</p>
     </div>
     <div class="col-md-12 col-sm-12">
@@ -125,39 +133,48 @@
         <div class="card-body">
           <div class="row">
             <div class="col-md-4">
-              <p class="card-text text-justify">Por ley, los municipios en México tienen que hacer sus programas o planes de acción climática. Para saber el
+              <p class="card-text text-justify">Por ley, los municipios en México tienen que hacer sus programas o
+                planes de acción climática. Para saber el
                 marco jurídico y las fuentes de financiamiento.
                 <button class="btn btn-outline-primary btn-block" (click)="viewDoc( )">
                   <i class="fas fa-book-open"></i>
                   ver documento
-                </button></p>
+                </button>
+              </p>
             </div>
-            <div class="col-md-8"><img src="assets/img/marco_juridico.jpg" weight="100%" height="100%" alt="Colegio de Colegio"></div>
+            <div class="col-md-8">
+              <img src="assets/img/marco_juridico.jpg" class="img-fluid" alt="Responsive image">
+
+              <!-- <img src="assets/img/marco_juridico.jpg" weight="100%" height="100%" alt="Colegio de Colegio"> -->
+            </div>
           </div>
         </div>
       </div>
 
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Esperamos <strong>sea un espacio que permita sentar las bases para una colaboración de más largo
+            plazo.</strong>
+        </h3>
+      </div>
+
+    </div>
+    <!-- Fin motivacion -->
   </div>
 
 
-  <div class="row">
-    <h3>Esperamos <strong>sea un espacio que permita sentar las bases para una colaboración de más largo
-        plazo.</strong>
-    </h3>
-  </div>
-  <!-- Fin motivacion -->
-</div>
-
-
-<!-- Modal visitar documentos Dropbox -->
-<ng-template #template>
-  <div class="modal-body text-center">
-    <p>Está a punto de salir de esta página</p>
-    <p>¿Desea continuar?</p>
-    <button type="button alert-heading" class="btn btn-primary" (click)="confirm()"><a
-        href="https://www.dropbox.com/sh/37qoy07qtn74pvd/AADpxxXkWhei6wc5hjFZusjsa?dl=0" class="alert-link"
-        target="blank">Yes</a>
-    </button>
-    <button type="button" class="btn btn-danger" (click)="decline()">No</button>
-  </div>
-</ng-template>
+  <!-- Modal visitar documentos Dropbox -->
+  <ng-template #template>
+    <div class="modal-body text-center">
+      <p>Está a punto de salir de esta página</p>
+      <p>¿Desea continuar?</p>
+      <button type="button alert-heading" class="btn btn-primary" (click)="confirm()"><a
+          href="https://www.dropbox.com/sh/37qoy07qtn74pvd/AADpxxXkWhei6wc5hjFZusjsa?dl=0" class="alert-link"
+          target="blank">Yes</a>
+      </button>
+      <button type="button" class="btn btn-danger" (click)="decline()">No</button>
+    </div>
+  </ng-template>

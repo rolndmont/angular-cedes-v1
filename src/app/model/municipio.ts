@@ -31,3 +31,8 @@ export interface Regiones {
     imagen: string,
     descripcion: string
 }
+
+export interface Graficas {
+    idT: number;    // Indicara que tipo grafica sera: 1 -> General, 2->Region, 3-> municipio
+    
+}

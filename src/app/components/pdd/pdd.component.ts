@@ -18,7 +18,7 @@ export class PDDComponent implements OnInit {
   zoom_in: number = 1;
   constructor() { 
 
-    this.url = "../assets/pdf/Marco_Juridico.pdf";
+    this.url = "../assets/pdf/cuestionario1.pdf";
 
   }
 

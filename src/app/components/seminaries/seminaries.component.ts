@@ -18,12 +18,11 @@ export class SeminariesComponent implements OnInit {
 
    cambio: boolean = false;
    message!: string;
-   url = "../assets/pdf/Marco_Juridico.pdf";
+   url = "../assets/pdf/cuestinario1.pdf";
    page: number = 1;
    totalPages!: number;
    isLoaded: boolean = false;
    zoom_in: number = 1;
-
     urlpdd: string = "";
 
     quiz1: string ="";

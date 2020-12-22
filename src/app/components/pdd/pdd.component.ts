@@ -12,9 +12,9 @@ export class PDDComponent implements OnInit {
 
 
   @Input() url: string;
-  totalPages: any;
+  totalPages!: number;
   isLoaded: boolean= false;
-  page: any;
+  Page!: number;
   zoom_in: number = 1;
   constructor() { 
 
@@ -40,11 +40,11 @@ export class PDDComponent implements OnInit {
   }
 
   nextPage() {
-    this.page++;
+    this.Page++;
   }
 
   prevPage() {
-    this.page--;
+    this.Page--;
   }
 
   zoomIn() {

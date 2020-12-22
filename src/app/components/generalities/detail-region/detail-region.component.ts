@@ -16,7 +16,8 @@ export class DetailRegionComponent implements OnInit {
     id: 1,
     titulo: "",
     imagen: "",
-    descripcion: ""
+    descripcion: "",
+    clima:""
   };
 
   constructor(private router: Router, private activatedRouter: ActivatedRoute, private _municipioservice: MunicipiosService) {

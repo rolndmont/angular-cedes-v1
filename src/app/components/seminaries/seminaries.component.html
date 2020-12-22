@@ -1,88 +1,90 @@
-<tabset [justified]="true">
-    <tab heading="Primer taller">
-        <hr>
+<!-- <tabset [justified]="true">
+    <tab heading="Primer taller"> -->
+<hr>
+<div class="row">
+    <div class="col-md-12 col-sm-12">
+        <p class="text-justify">El 29 de noviembre de 2018 en el Centro de Estudios de Desarrollo
+            Económico y Social de la Benemérita Universidad Autónoma de Puebla (CEDES-BUAP),
+            se llevó a cabo el taller “Planificación para afrontar los retos del cambio climático”, en el
+            que participaron representantes de 21 municipios del estado de Puebla. Los representantes de los
+            municipios contestaron dos encuestas.
+        </p>
         <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <p class="text-justify">El 29 de noviembre de 2018 en el Centro de Estudios de Desarrollo
-                    Económico y Social de la Benemérita Universidad Autónoma de Puebla (CEDES-BUAP),
-                    se llevó a cabo el taller “Planificación para afrontar los retos del cambio climático”, en el
-                    que participaron representantes de 21 municipios del estado de Puebla. Los representantes de los
-                    municipios contestaron dos encuestas.
-                </p>
-                <div class="row">
-                </div>
-                <p class="text-justify">Las percepciones de los representantes de los municipios fueron
-                    obtenidas mediante dos encuestas que respondieron durante el taller, (ver figuras 1 y 2)
-                </p>
-                <p class="text-justify">Se realizaron 2 encuestas, la primera fue para conocer las percepciones
-                    que tenían con
-                    respecto a
-                    amenazas climáticas tales como: lluvias, sequías, heladas-granizadas, inundaciones y golpes
-                    de
-                    calor. En la segunda encuesta se pregunta acerca de la vulnerabilidad de sectores
-                    productivos
-                    ante las amenazas climatológicas.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <mat-accordion>
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Programa del Taller - Encuestas
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    Ver programa del taller y Cuestionarios aplicados
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
+        </div>
+        <p class="text-justify">Las percepciones de los representantes de los municipios fueron
+            obtenidas mediante dos encuestas que respondieron durante el taller, (ver figuras 1 y 2)
+        </p>
+        <p class="text-justify">Se realizaron 2 encuestas, la primera fue para conocer las percepciones
+            que tenían con
+            respecto a
+            amenazas climáticas tales como: lluvias, sequías, heladas-granizadas, inundaciones y golpes
+            de
+            calor. En la segunda encuesta se pregunta acerca de la vulnerabilidad de sectores
+            productivos
+            ante las amenazas climatológicas.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Programa del Taller - Encuestas
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Ver programa del taller y Cuestionarios aplicados
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <app-pdd [url]="url"></app-pdd>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
                             <div class="row">
-                                <div class="col-md-8">
-                                    <app-pdd [url]="url"></app-pdd>
+                                <div class="col-12">
+                                    <h4>Cuestionarios</h4>
                                 </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h4>Cuestionarios</h4>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="card" *ngFor="let item of FileQ">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-4"><img src="{{ item.image }}" width="100"
-                                                                alt=""></div>
-                                                        <div class="col-8">
-                                                            <p class="card-text">{{ item.description }}
-                                                                <button class="btn btn-outline-primary btn-block"
-                                                                    (click)="mundo( item.url )">
-                                                                    ver...
-                                                                </button>
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                <div class="col-12">
+                                    <div class="card" *ngFor="let item of FileQ">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-4"><img src="{{ item.image }}" width="100" alt=""></div>
+                                                <div class="col-8">
+                                                    <p class="card-text">{{ item.description }}
+                                                        <button class="btn btn-outline-primary btn-block"
+                                                            (click)="mundo( item.url )">
+                                                            ver...
+                                                        </button>
+                                                    </p>
                                                 </div>
                                             </div>
-                                            <hr>
                                         </div>
                                     </div>
+                                    <hr>
                                 </div>
                             </div>
-                        </mat-expansion-panel>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
 
-                    </mat-accordion>
-                </div>
-            </div>
-
-
+            </mat-accordion>
         </div>
-        <hr>
-        <div class="row">
-            <div class="col-12">
-                <h3 style="text-align: center;">Resultados</h3>
-            </div>
-            <div class="col-md-12 col-sm-12">
-                <app-grappcharts></app-grappcharts>
-            </div>
+    </div>
+</div>
+<hr>
+<h3 style="text-align: center;">Resultados</h3>
+<div class="row">
+    <div class="col-md-4 col-sm-12">
+     
+        <app-one [barChartData]="barChartData"></app-one>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <app-one [barChartData]="barChartData2"></app-one>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <app-one [barChartData]="barChartData4" ></app-one>
+    </div>
 
-        </div>
-    </tab>
-</tabset>
+</div>
+<!-- </tab>
+</tabset> -->

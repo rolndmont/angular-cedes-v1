@@ -41,6 +41,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import {MatListModule} from '@angular/material/list';
+import { MatSelectModule  } from "@angular/material/select";
 import { DetailRegionComponent } from './components/generalities/detail-region/detail-region.component';
 import { PDDComponent } from './components/pdd/pdd.component';
  
@@ -71,6 +72,7 @@ import { PDDComponent } from './components/pdd/pdd.component';
     BrowserModule,
     CommonModule,
     APP_ROUTING,
+    MatSelectModule,
     MatListModule,
     ChartsModule,
     TooltipModule.forRoot(),

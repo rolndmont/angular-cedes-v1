@@ -10,16 +10,23 @@
         <div class="col-md-12">
                 <div class="card">
                         <div class="card-body">
-                          <div class="row">
-                            <div class="col-md-4">
-                                    <img [src]=" Region.imagen" weight="100%" height="100%" alt="Programa del Taller">
+                                <div class="row">
+                                        <div class="col-md-4">
+                                                <img [src]=" Region.imagen" weight="100%" height="100%"
+                                                        alt="Programa del Taller">
+                                        </div>
+                                        <div class="col-md-8">
+                                                <p class="card-text text-justify">{{ Region.descripcion }}</p>
+                                                <p class="card-text text-justify">{{ Region.clima }}</p>
+                                                <p class="text-justify">Bibliografia: Enciclopedia de Los Municipios y
+                                                        Delegaciones de México Estado de Puebla.</p>
+                                                <p class="text-justify">
+                                                        http://www.inafed.gob.mx/work/enciclopedia/EMM21puebla/municipios/municipios.html
+                                                </p>
+                                        </div>
                                 </div>
-                            <div class="col-md-8">
-                              <p class="card-text text-justify">{{ Region.descripcion }}</p>
-                            </div>
-                          </div>
                         </div>
-                      </div>
+                </div>
         </div>
 </div>
 <div class="row">

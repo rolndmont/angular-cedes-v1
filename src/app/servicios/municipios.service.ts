@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Municipio, Files, Regiones } from "../model/municipio";
+import { Municipio, Files, Regiones, Graficasbarras } from "../model/municipio";
+import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 
 
 @Injectable({
@@ -197,7 +198,7 @@ export class MunicipiosService {
     {
       idR: 5,
       id: 0,
-      nombre: 'Tehuacan',
+      nombre: 'Tehuacán',
       imagen: 'assets/images/Tehuacan/tehuacan.jpg',
       descripcion: "El municipio de Tehuacán se localiza en la parte sureste del Estado de Puebla. Sus coordenadas geográficas son los paralelos 18º22'06'' y 18º36'12'' de longitud norte, y los meridianos 97º15'24'' y 97º37'24'' de longitud occidental. Sus colindancias son al Norte con Tepanco de López, Santiago Miahuatlán, Nicolás Bravo y Vicente Guerrero, al Este con Vicente Guerrero, San Antonio Cañada y Ajalpan, al Sur con San Gabriel Chilac, Zapotitlán y Altepexi y al Oeste con Zapotitlán, San Martín Atexcal, Juan N. Méndez y Tepango de López.",
       extension: 'El municipio de Tehuacán representa el 1.15% de la superficie del Estado. Abarcando una Extensión aproximada de 553.57 kilómetros cuadrados, que lo ubican en el lugar 18º con respecto a los demás municipios del Estado',
@@ -342,40 +343,105 @@ export class MunicipiosService {
       id: 1,
       titulo: "Sierra Norte",
       imagen: "assets/images/sierraNorte/chignahuapan.png",
-      descripcion: ""
-    },{
+      descripcion: "Ubicación. Se encuentra al noroeste del estado. Colinda con Veracruz al norte y con Hidalgo y Tlaxcala al oeste y al este con la región dos. Es la segunda región más  habitada debido sobre todo a las buenas condiciones naturales y socioculturales. Su extención territorial es de 5903.5 km. ",
+      clima: "Clima. Caracterizada por sus variadas temperaturas, cálidas , húmedas y frías; acompañan al paisaje la neblina en las partes altas y humedad con lluvia durante todo el año."
+    }, {
       id: 2,
       titulo: "Sierra Nororiental",
       imagen: "assets/images/nororiental/teziutlan.jpg",
-      descripcion: ""
-    },{
+      descripcion: "Ubicación. Está al norte y al oriente del estado, limita con Veracruz al norte y al oriente y con las regiones I Sierra norte , al poniente y al sur con la III Valle Serdán. Es la quinta región más poblada del estado, su extensión territorial es de 2509.3 km2. Predomina la población rural con un 57.5%  frente a un 42.5% en comunidades urbanas. Esta región está conformada por 28 municipios .",
+      clima: "Clima. Es una zona montañosa en la que llueve todo el año, con distintas combinaciones de climas, que van desde el cálido húmedo hasta el frío. Atractivos naturales. Tiene varios afluentes como el río Apulco, afluente del Necaxa y el Martínez de la Torre o Nautla en Veracruz. Cuenta con paisajes boscosos con distintas especies de árboles y vastos pastizales. Los cerros que se pueden mencionar son el Colorado, Las Ventanillas, el Ozuma, el Toxcaitac, la Bandera y el Pinal. Su flora se compone de distintas especies arbóreas como pino, oyamel, laquidámbar, entre otros. Su fauna es silvestre, entre la que destacan armadillos, tuzas, liebres, mapaches, tlacuaches, ardillas y otras en peligro de extinción como el zorro. En esta región se encuentran pueblos enclavados en las alturas de la sierra con sinuosas callejuelas empedradas y techumbres de dos aguas, siempre húmedos siempre verdes."
+    }, {
       id: 3,
       titulo: "Valle Serdan",
       imagen: "assets/images/angelopolis/calpan.jpg",
-      descripcion: ""
-    },{
+      descripcion: "Ubicación. Se sitúa en el centro del estado, colinda al norte con la región Sierra Norte y la región Sierra Nororiental al oriente con Veracruz y al Poniente con Tlaxcala. Su extensión es de 5300.6 km2. Es la tercera región por número de población, formada por 598,305 habitantes, de los cuales 40.8% viven en comunidades rurales y 59.2% en comunidades urbanas. Está integrada por 31 municipios.",
+      clima: "Clima. Su territorio tiene valles, llanuras y montaña. La variedad vegetal es muy amplia, formada por arbustos, nopales, hierbas, algas, hongos, helechos y musgos, en las montañas el clima es frío y en los valles es templado. El Citlaltépetl o Pico de Orizaba es la elevación más importante y  la principal zona boscosa, además de tener una pradera de alta montaña y nieves perpetuas. Atractivos Naturales. En esta región existen algunas zonas desérticas y varias lagunas como Xolcingo, Alchichica, Quecholac, Aljojuca, Tecuitlapa y Tlapanalá. Algunos de sus paisajes naturales han sido alterados por el hombre, por ser un territorio agradable para habitar, como en el caso de los valles.  La fauna silvestre que aún existe pero está en peligro de extinción, la componen coyotes, gatos montes, tejones, zorrillos, ardillas, conejos, perros, mapaches, comadrejas; también hay reptiles como camaleones y víboras de cascabel."
+    }, {
       id: 4,
       titulo: "Angelopolis",
       imagen: "assets/images/angelopolis/calpan.jpg",
-      descripcion: ""
-    },{
+      descripcion: "Situada en la parte central y poniente del estado, limita al norte con Tlaxcala, al oriente con la región Valle Serdán, al poniente con el estado de México y al sur con las regiones valle de Atlixco y Matamoros y Mixteca. Tiene una extensión 3322 km2. Es la región más poblada del estado con cerca de 3 milones de habitantes, de los cuales 6.4% viven en comunidades rurales y 93.6% en comunidades urbanas. Tiene 33 municipios.",
+      clima: "Es templado con lluvias en verano en los valles y frío alrededor de las montañas. Atractivos Naturales. Tiene valles como el de la ciudad capital heroica Puebla de Zaragoza y montañas boscosas como las de la Sierra de Nevada y las de la Sierra de Tentzo, varias barrancas como la Trasquilla, El Salto y Chichipilco. Además de varios cerros aislados. Los ríos más importantes son el Atoyac y el Alseseca. Tiene algunas lagunas, jagüeyes y algunos arroyos intermitentes provenientes de las faldas de la Malinche, del Popocatépetl y del Iztaccihuatl; esta agua es almacenada en pozos que ayudan a la región a suministrarse el líquido en las épocas de sequía. Cuenta también con la presa manual Ávila Camacho, ubicada en Valsequillo, los escurrimientos que la surten llegan de 22 municipios de puebla y 48 de Tlaxcala, a su vez, la presa surte de agua para riego a zonas de Atlixco, Izúcar de Matamoros y Tecamachalco. El paisaje natural ha sido alterado por el hombre por ser una zona muy habitable, sobre todo en los valles. La fauna original se compone de aves como codornices y gavilanes, además de conejos, coyotes, tuzas, ardillas y liebres; insectos, peces de agua dulce, anfibios y murciélagos."
+    }, {
       id: 5,
       titulo: "Valle Atlizco Matamoros",
       imagen: "assets/images/angelopolis/calpan.jpg",
-      descripcion: ""
+      descripcion: "Esta región se ubica al suroeste del estado limita al norte con la región 4 Angelópolis  al oriente y sur con la región 6 Mixteca y al poniente con Morelos. Su extensión territorial es de 3074 km2.Es la sexta región mas poblada del estado con cerca de 40 mil habitantess, de los cuales 40.6% viven en comunidades rurales y 59.4% en comunidades urbanas. Está compuesta de 24 municipios. Con escasas formaciones montañosas como las de las estribaciones de la Sierra Nevada, y cerros como el Grande el Zacatoso Toltepec y Tapancale, Chicastlera y La Mesa, la región se forma fundamentalmente con valles como el de Atlixco y el de Izúcar de Matamoros ambos de la meseta poblana y caracterizados  por su topografía plana, en ellos se concentran la mayor parte de las localidades habitadas y las vías de comunicación más importantes.",
+      clima: " va de templado subhúmedo a cálido subhúmedo con lluvias en verano, sobretodo en los valles y frio en las zonas montañosas. En algunos lugares de esta región llueve menos en verano que en la mayoría de los otros municipios, a este fenómeno se le llama sequía de verano."
     }, {
       id: 6,
       titulo: "Mixteca",
       imagen: "assets/images/mixteca/huitsil.jpg",
-      descripcion: ""
+      descripcion: "Está en el suroeste del estado, limita con las regiones 4 Angelópolis, 3 Valle de Serdán y 5 valle de Atlixco y Matamoros al norte, con la región 7 Tehuacán y Sierra Negra al oriente, con Morelos y Guerrero al poniente y al sur con Guerrero y Oaxaca. Su geografía es muy accidentada. Es el puente natural entre las vastas zonas del Nudo Mixteco y la vertiente occidental del Altiplano Central tiene una extensión territorial 8849.6Km2., es la región menos poblada del estado con cerca de 250 mil habitantes, de los cuales 68.6%viven en comunidades rurales y 31.4% en comunidades urbanas. La forman 45 municipios.",
+      clima: "Con variedad climática, sobresalen climas como el cálido seco, semi seco cálido con lluvias en verano y escasas a lo largo del año, semiárido subhúmedo con lluvias en verano y templado subhúmedo con lluvias en verano."
     }, {
       id: 7,
       titulo: "Región VII: Tehuacan y Sierra Negra",
       imagen: "assets/images/Tehuacan/tehuacan.jpg",
-      descripcion: "Por su ubicación Extensión y configuración presenta una gran variedad de climas que van desde los templados en la sierra de Zapotitlán, hasta los templados de la Sierra de Zongolica, pasando por los cálidos del Valle de Tehuacán. clima templado subhúmedo con lluvias en verano; se ubica en el extremo poniente de la parte elevada de la Sierra de Zapotitlán. Clima seco semicálido con lluvias en verano y escasas a lo largo del año; se identifica en la parte sur del municipio, dentro del Valle de Tehuacán. Clima semiseco cálido lluvias en verano y escasas a lo largo del año; es el clima predominante en el área correspondiente al Valle de Tehuacán. Clima semiseco templado con lluvias en verano y escasas a lo largo del año; es el clima que se presenta entre las zonas orientales del Valle de Tehuacán, y las primeras estribaciones de la Sierra de Zongolica"
+      descripcion: "Por su ubicación Extensión y configuración presenta una gran variedad de climas que van desde los templados en la sierra de Zapotitlán, hasta los templados de la Sierra de Zongolica, pasando por los cálidos del Valle de Tehuacán. clima templado subhúmedo con lluvias en verano; se ubica en el extremo poniente de la parte elevada de la Sierra de Zapotitlán. Clima seco semicálido con lluvias en verano y escasas a lo largo del año; se identifica en la parte sur del municipio, dentro del Valle de Tehuacán. Clima semiseco cálido lluvias en verano y escasas a lo largo del año; es el clima predominante en el área correspondiente al Valle de Tehuacán. Clima semiseco templado con lluvias en verano y escasas a lo largo del año; es el clima que se presenta entre las zonas orientales del Valle de Tehuacán, y las primeras estribaciones de la Sierra de Zongolica",
+      clima: ""
     }
   ];
 
+  // Informacion sobre las graficas
+
+  public ChartGraph: any[] = [
+    {
+      idT: 1,
+      idG: 1,
+      bChartLab: ["Amenaza 1", " Amenaza 2", "Amenaza 3", "Amenaza 4", "Amenaza 5"],
+      data: [5, 1, 17, 3, 8],
+      lab: ["Lluvia", "Sequias", "Inundación", "Helada y Granizada", "Golpe de Calor"]
+    }, {
+      idT: 1,
+      idG: 1,
+
+      bChartLab: ['2006', '2007', '2008', '2009', '2010', '2011', '2012'],
+      data: [65, 59, 80, 81, 56, 55, 40, 65, 59, 80, 81, 56, 55, 40, 65, 59, 80, 81, 56, 55, 40],
+      lab: ["Series A", "Series B", "Series C", "Helada y Granizada", "Golpe de Calor"]
+    }
+  ];
+
+  public ChartData: ChartDataSets[] = [
+    { data: [5, 1, 17, 3, 8], label: 'Lluvia' },
+    { data: [6, 4, 8, 11, 6], label: 'Sequias' },
+    { data: [11, 5, 9, 4, 6], label: 'Inundación' },
+    { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
+    { data: [3, 6, 9, 12, 4], label: 'Golpe de Calor' }
+  ];
+
+  public ChartData2: ChartDataSets[] = [
+    { data: [6, 4, 8, 11, 6], label: 'Sequias' },
+    { data: [5, 1, 17, 3, 8], label: 'Luvias' },
+    { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
+    { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
+    { data: [11, 5, 9, 4, 6], label: 'Inundación' }
+  ];
+
+  public TodoGrafica = {
+    
+      0:  [
+        { data: [6, 4, 8, 11, 6], label: 'Sequias' },
+        { data: [5, 1, 17, 3, 8], label: 'rotas' },
+        { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
+        { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
+        { data: [11, 5, 9, 4, 6], label: 'Inundación' }
+      ]
+    ,
+    
+      1:  [
+        { data: [6, 4, 8, 11, 6], label: 'nuevos' },
+        { data: [5, 1, 17, 3, 8], label: 'Luvias' },
+        { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
+        { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
+        { data: [11, 5, 9, 4, 6], label: 'Inundación' }
+      ]
+    
+  };
+
+
+  //Fin inforamcion de graficas
 
   idRegion!: number;
   uid!: string;
@@ -442,10 +508,10 @@ export class MunicipiosService {
 
 
 
-  public getOneRegion( id: number ) {
+  public getOneRegion(id: number) {
     this.identificaRegion = id;
 
-    console.log("Id de region: "+ id);
+    console.log("Id de region: " + id);
     if (this.identificaRegion == 1) {
       return this.Region[0];
     }
@@ -460,7 +526,7 @@ export class MunicipiosService {
     }
     if (this.identificaRegion == 7) {
       console.log("true");
-      
+
       return this.Region[6];
     }
 
@@ -475,7 +541,20 @@ export class MunicipiosService {
    * getOneFile
    */
   public name() {
-    
+
+  }
+
+
+  public getBarChart() {
+    return this.ChartData;
+  }
+  public getBarChart1() {
+    return this.ChartData2;
+  }
+
+
+  public getTodoChart() {
+    return this.TodoGrafica;
   }
 
 

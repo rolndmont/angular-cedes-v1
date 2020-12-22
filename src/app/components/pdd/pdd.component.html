@@ -1,3 +1,7 @@
 <!-- <ngx-extended-pdf-viewer [src]="'assets/pdf/Marco_Juridico.pdf'" [height]="'90vh'" ></ngx-extended-pdf-viewer> -->
-<pdf-viewer [src]="url"  [render-text]="true"  [show-borders]="true">
+<!-- <pdf-viewer [src]="url"  [render-text]="true"  [show-borders]="true">
+</pdf-viewer> -->
+
+<pdf-viewer [src]="url" [show-all]="true" [show-borders]="true" [page]="Page" [original-size]="false"
+        [autoresize]="true" [zoom]="zoom_in" (after-load-complete)="afterLoadComplete($event)">
 </pdf-viewer>

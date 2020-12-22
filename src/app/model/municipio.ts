@@ -29,10 +29,14 @@ export interface Regiones {
     id: number,
     titulo: string
     imagen: string,
-    descripcion: string
+    descripcion: string,
+    clima: string
 }
 
-export interface Graficas {
-    idT: number;    // Indicara que tipo grafica sera: 1 -> General, 2->Region, 3-> municipio
-    
+export interface Graficasbarras {
+    idT: number,    // Indicara que tipo grafica sera: 1 -> General, 2->Region, 3-> municipio
+    idG: number,    // Indicara que posicion ocupa la grafica
+    bChartLab: string[],
+    data: number[],
+    lab: string[],
 }

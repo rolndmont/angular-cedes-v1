@@ -386,20 +386,29 @@ export class MunicipiosService {
 
   // Informacion sobre las graficas
 
-  public ChartGraph: any[] = [
+  public TodoGrafica: any[] = [
     {
       idT: 1,
       idG: 1,
-      bChartLab: ["Amenaza 1", " Amenaza 2", "Amenaza 3", "Amenaza 4", "Amenaza 5"],
-      data: [5, 1, 17, 3, 8],
-      lab: ["Lluvia", "Sequias", "Inundación", "Helada y Granizada", "Golpe de Calor"]
+      bChartLab: ["nivel 1", " nivel 2", "Anivel 3", "nivel 4", "nivel 5"],
+      chartData: [
+        { data: [6, 4, 8, 11, 6], label: 'Sequias' },
+        { data: [5, 1, 17, 3, 8], label: 'rotas' },
+        { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
+        { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
+        { data: [11, 5, 9, 4, 6], label: 'Inundación' }
+      ],
     }, {
       idT: 1,
       idG: 1,
-
-      bChartLab: ['2006', '2007', '2008', '2009', '2010', '2011', '2012'],
-      data: [65, 59, 80, 81, 56, 55, 40, 65, 59, 80, 81, 56, 55, 40, 65, 59, 80, 81, 56, 55, 40],
-      lab: ["Series A", "Series B", "Series C", "Helada y Granizada", "Golpe de Calor"]
+      bChartLab: ["Amenaza 1", " Amenaza 2", "Amenaza 3", "Amenaza 4", "Amenaza 5"],
+      chartData: [
+        { data: [6, 4, 8, 11, 6], label: 'Sequias' },
+        { data: [5, 1, 17, 3, 8], label: 'rotas' },
+        { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
+        { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
+        { data: [11, 5, 9, 4, 6], label: 'Inundación' }
+      ],
     }
   ];
 
@@ -419,26 +428,45 @@ export class MunicipiosService {
     { data: [11, 5, 9, 4, 6], label: 'Inundación' }
   ];
 
-  public TodoGrafica = {
-    
-      0:  [
-        { data: [6, 4, 8, 11, 6], label: 'Sequias' },
-        { data: [5, 1, 17, 3, 8], label: 'rotas' },
-        { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
-        { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
-        { data: [11, 5, 9, 4, 6], label: 'Inundación' }
-      ]
-    ,
-    
-      1:  [
-        { data: [6, 4, 8, 11, 6], label: 'nuevos' },
-        { data: [5, 1, 17, 3, 8], label: 'Luvias' },
-        { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
-        { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
-        { data: [11, 5, 9, 4, 6], label: 'Inundación' }
-      ]
-    
-  };
+  // public TodoGrafica = [
+  //   {
+  //     T: [
+  //       { data: [6, 4, 8, 11, 6], label: 'Sequias' },
+  //       { data: [5, 1, 17, 3, 8], label: 'rotas' },
+  //       { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
+  //       { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
+  //       { data: [11, 5, 9, 4, 6], label: 'Inundación' }
+  //     ],
+  //     T: [
+  //       { data: [6, 4, 8, 11, 6], label: 'nuevos' },
+  //       { data: [5, 1, 17, 3, 8], label: 'Luvias' },
+  //       { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
+  //       { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
+  //       { data: [11, 5, 9, 4, 6], label: 'Inundación' }
+  //     ]
+  //   }
+  // ];
+
+  // public TodoGrafica = {
+
+  //     0:  [
+  //       { data: [6, 4, 8, 11, 6], label: 'Sequias' },
+  //       { data: [5, 1, 17, 3, 8], label: 'rotas' },
+  //       { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
+  //       { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
+  //       { data: [11, 5, 9, 4, 6], label: 'Inundación' }
+  //     ]
+  //   ,
+
+  //     1:  [
+  //       { data: [6, 4, 8, 11, 6], label: 'nuevos' },
+  //       { data: [5, 1, 17, 3, 8], label: 'Luvias' },
+  //       { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
+  //       { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
+  //       { data: [11, 5, 9, 4, 6], label: 'Inundación' }
+  //     ]
+
+  // };
 
 
   //Fin inforamcion de graficas

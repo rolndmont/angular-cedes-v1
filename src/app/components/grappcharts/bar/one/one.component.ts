@@ -24,9 +24,11 @@ export class OneComponent implements OnInit {
     }
   };
   
-  public barChartLabels: Label[] = ['Amenaza 1', 'Amenaza 2', 'Amenaza 3', 'Amenaza 4', 'Amenaza 5'];
+  @Input() barChartLabels: Label[] = [];
   public barChartType: ChartType = 'bar';
   public barChartLegend = true;
+  public barChartData1: ChartDataSets[] = [];
+  public arreglo:any[] = [];
   // public barChartPlugins = [pluginDataLabels];
 
   // public barChartData: ChartDataSets[] = [
@@ -42,6 +44,9 @@ export class OneComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // // this.barChartLabels.push(this.barChartData[0].bChartLab);
+    // this.barChartLabels 
+    // this.barChartData.push(this.barChartData.chartData);
   }
 
 }

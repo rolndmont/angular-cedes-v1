@@ -34,7 +34,7 @@ export class SeminariesComponent implements OnInit {
   // public barChartData3: ChartDataSets[] = [];
   public barChartData3: any[] = [];
   public barChartData4: ChartDataSets[] = [];
-  public barChartData5: ChartDataSets[] = [];
+  public barChartData5: any[] = [];
 
   constructor(private router: Router, private activatedRouter: ActivatedRoute, private _municipioservice: MunicipiosService) {
 
@@ -51,40 +51,19 @@ export class SeminariesComponent implements OnInit {
     }
     console.log(this.FileQ);
 
-
-    this.barChartData = this._municipioservice.getBarChart();
-    this.barChartData2 = this._municipioservice.getBarChart1();
-    console.log(this.barChartData2);
-
     this.barChartData3.push(this._municipioservice.getTodoChart());
     console.log(this.barChartData3);
-    let barChartData6:  ChartDataSets[]= [];
+    console.log("VerData3= ", this.barChartData3[0]);
 
     for (const data in this.barChartData3) {
       if (Object.prototype.hasOwnProperty.call(this.barChartData3, data)) {
         this.barChartData5 = this.barChartData3[data];
-        console.log("000");
-        
+        // console.log("Primer for", this.barChartData5);
+
       }
     }
+    console.log("VerData5= ", this.barChartData5[0].chartData);
 
-    for (const data in this.barChartData5) {
-      if (Object.prototype.hasOwnProperty.call(this.barChartData5, data)) {
-        // this.barChartData4 = this.barChartData5[data];
-        this.barChartData4.push(this.barChartData5[data]);
-      }
-    }
-
-    // Object.keys(this.barChartData3).map((key) =>{
-    //   barChartData6.push({[key]:this.barChartData3[key]})
-    //   return barChartData6;
-    // });
-
-    console.log("Objeto= ", this.barChartData5);
-    console.log("Array= ", this.barChartData4);
-    
-    
-    
 
   }
 

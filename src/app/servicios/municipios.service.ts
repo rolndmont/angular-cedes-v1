@@ -194,7 +194,7 @@ export class MunicipiosService {
 
   ];
 
-  T: Municipio[] = [
+  T: any[] = [
     {
       idR: 5,
       id: 0,
@@ -204,7 +204,59 @@ export class MunicipiosService {
       extension: 'El municipio de Tehuacán representa el 1.15% de la superficie del Estado. Abarcando una Extensión aproximada de 553.57 kilómetros cuadrados, que lo ubican en el lugar 18º con respecto a los demás municipios del Estado',
       clima: 'Por su ubicación Extensión y configuración presenta una gran variedad de climas que van desde los templados en la sierra de Zapotitlán, hasta los templados de la Sierra de Zongolica, pasando por los cálidos del Valle de Tehuacán. clima templado subhúmedo con lluvias en verano; se ubica en el extremo poniente de la parte elevada de la Sierra de Zapotitlán. Clima seco semicálido con lluvias en verano y escasas a lo largo del año; se identifica en la parte sur del municipio, dentro del Valle de Tehuacán. Clima semiseco cálido lluvias en verano y escasas a lo largo del año; es el clima predominante en el área correspondiente al Valle de Tehuacán. Clima semiseco templado con lluvias en verano y escasas a lo largo del año; es el clima que se presenta entre las zonas orientales del Valle de Tehuacán, y las primeras estribaciones de la Sierra de Zongolica',
       recursos: 'Los recursos más importantes son sus manantiales naturales',
-      principales: 'El municipio presenta una gran variedad vegetativa. En áreas del Valle que no están suficientemente planas, pero que tampoco son demasiado accidentadas, se presentan zonas de mezquitales. La vegetación que presentan el declive oriental de la Sierra de Zapotitlán y el occidental de la Sierra de Zongolica, constituida, principalmente, por matorral desértico rosetófilo, en ocasiones asociado a vegetación secundaria arbustiva o matorral subinerme; también se encuentran chaparrales y vegetación de selva baja caducifolia. El noreste, del municipio donde la Sierra de Zongolica alcanza mayor altura y el clima ya es templado, se presentan bosques de pino-encino y pino.'
+      principales: 'El municipio presenta una gran variedad vegetativa. En áreas del Valle que no están suficientemente planas, pero que tampoco son demasiado accidentadas, se presentan zonas de mezquitales. La vegetación que presentan el declive oriental de la Sierra de Zapotitlán y el occidental de la Sierra de Zongolica, constituida, principalmente, por matorral desértico rosetófilo, en ocasiones asociado a vegetación secundaria arbustiva o matorral subinerme; también se encuentran chaparrales y vegetación de selva baja caducifolia. El noreste, del municipio donde la Sierra de Zongolica alcanza mayor altura y el clima ya es templado, se presentan bosques de pino-encino y pino.',
+      grafica: [
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-10','feb-10','mar-10','abr-10','may-10','jun-10','jul-10','ago-10','sep-10','oct-10','nov-10','dic-10','ene-11','feb-11','mar-11','abr-11','may-11','jun-11','jul-11','ago-11','sep-11','oct-11','nov-11','dic-11'],
+          chartData: [
+            { data: [49,33.5,4,36.5,40.5,94,240.5,185.5,112.5,0,8,0,0.5,0,0,10.5,90.5,215,103.3,112.5,66.1,25,0,1], label: 'Mensual' },
+            { data: [8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5,8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Mensual y Normal TEHUACÁN Efecto del Niño 2010-2011'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-97','feb-97','mar-97','abr-97','may-97','jun-97','jul-97','ago-97','sep-97','oct-97','nov-97','dic-97','ene-98','feb-98','mar-98','abr-98','may-98','jun-98','jul-98','ago-98','sep-98','oct-98','nov-98','dic-98'],
+          chartData: [
+            { data: [0,0,6.5,68.5,97,46,14,9.5,41,77,36.5,18.5,0,0,0,1.5,0,35.5,112,92,309.2,39,35.5,0], label: 'Mensual' },
+            { data: [8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5,8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Mensual y Normal TEHUACÁN Efecto del Niño 1997-1998'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-91','feb-91','mar-91','abr-91','may-91','jun-91','jul-91','ago-91','sep-91','oct-91','nov-91','dic-91','ene-92','feb-92','mar-92','abr-92','may-92','jun-92','jul-92','ago-92','sep-92','oct-92','nov-92','dic-92'],
+          chartData: [
+            { data: [0,1,0,11.5,54.5,162.3,167.3,28.5,203.2,39.5,11.5,0.5,75,14.5,45.5,4.2,271,130.8,37,34,27,9.5,9.5,0], label: 'Mensual' },
+            { data: [8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5,8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Mensual y Normal TEHUACÁN Efecto del Niño 1991-1992'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-88','feb-88','mar-88','abr-88','may-88','jun-88','jul-88','ago-88','sep-88','oct-88','nov-88','dic-88','ene-89','feb-89','mar-89','abr-89','may-89','jun-89','jul-89','ago-89','sep-89','oct-89','nov-89','dic-89'],
+          chartData: [
+            { data: [13,0,0,14.5,55.5,111.8,81,0,155.1,8.3,0,0,0,1,5.5,14,22,132.1,79.8,74,25,7.1,12,0], label: 'Mensual' },
+            { data: [8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5,8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Mensual y Normal TEHUACÁN Efecto del Niño 1988-1989'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83' ],
+          chartData: [
+            { data: [0,18,23,11,54,110.5,13,3,5.4,28.8,15,2.5,2,32.5,6,4,6.5,114.9,109.6,11.4,20.2,0,25.6,5], label: 'Mensual' },
+            { data: [8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5,8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Mensual y Normal TEHUACÁN Efecto del Niño 1982-1983'
+        }
+      ]
     }
   ];
 
@@ -412,6 +464,32 @@ export class MunicipiosService {
     }
   ];
 
+  // Graficas de Municipio  Tehuacán
+  public GraficaTehuaca: any[] = [
+    {
+      idT: 2,
+      idG: 1,
+      bChartLab: ["nivel 1", " nivel 2", "Anivel 3", "nivel 4", "nivel 5"],
+      chartData: [
+        { data: [6, 4, 8, 11, 6], label: 'Sequias' },
+        { data: [5, 1, 17, 3, 8], label: 'rotas' },
+        { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
+        { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
+        { data: [11, 5, 9, 4, 6], label: 'Inundación' }
+      ],
+      tipo:"bar"
+    }, {
+      idT: 2,
+      idG: 1,
+      bChartLab:  ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83' ],
+      chartData: [
+        { data: [0,18,23,11,54,110.5,13,3,5.4,28.8,15,2.5,2,32.5,6,4,6.5,114.9,109.6,11.4,20.2,0,25.6,5], label: 'Mensual' },
+        { data: [8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5,8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5], label: 'Normal', yAxisID: 'y-axis-1' }
+      ],
+      tipo:"line"
+    }
+  ];
+
   public ChartData: ChartDataSets[] = [
     { data: [5, 1, 17, 3, 8], label: 'Lluvia' },
     { data: [6, 4, 8, 11, 6], label: 'Sequias' },
@@ -427,46 +505,6 @@ export class MunicipiosService {
     { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
     { data: [11, 5, 9, 4, 6], label: 'Inundación' }
   ];
-
-  // public TodoGrafica = [
-  //   {
-  //     T: [
-  //       { data: [6, 4, 8, 11, 6], label: 'Sequias' },
-  //       { data: [5, 1, 17, 3, 8], label: 'rotas' },
-  //       { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
-  //       { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
-  //       { data: [11, 5, 9, 4, 6], label: 'Inundación' }
-  //     ],
-  //     T: [
-  //       { data: [6, 4, 8, 11, 6], label: 'nuevos' },
-  //       { data: [5, 1, 17, 3, 8], label: 'Luvias' },
-  //       { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
-  //       { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
-  //       { data: [11, 5, 9, 4, 6], label: 'Inundación' }
-  //     ]
-  //   }
-  // ];
-
-  // public TodoGrafica = {
-
-  //     0:  [
-  //       { data: [6, 4, 8, 11, 6], label: 'Sequias' },
-  //       { data: [5, 1, 17, 3, 8], label: 'rotas' },
-  //       { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
-  //       { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
-  //       { data: [11, 5, 9, 4, 6], label: 'Inundación' }
-  //     ]
-  //   ,
-
-  //     1:  [
-  //       { data: [6, 4, 8, 11, 6], label: 'nuevos' },
-  //       { data: [5, 1, 17, 3, 8], label: 'Luvias' },
-  //       { data: [3, 6, 9, 12, 4], label: 'Golpe de calor' },
-  //       { data: [7, 7, 7, 5, 8], label: 'Helada y Granizada' },
-  //       { data: [11, 5, 9, 4, 6], label: 'Inundación' }
-  //     ]
-
-  // };
 
 
   //Fin inforamcion de graficas
@@ -585,5 +623,8 @@ export class MunicipiosService {
     return this.TodoGrafica;
   }
 
+  public getGraficaTehuaca(){
+    return this.GraficaTehuaca;
+  }
 
 }

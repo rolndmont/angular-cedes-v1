@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
 // import * as pluginAnnotations from 'chartjs-plugin-annotation';
@@ -9,11 +9,10 @@ import { Color, Label } from 'ng2-charts';
   styleUrls: ['./line.component.css']
 })
 export class LineComponent implements OnInit {
-  public lineChartData: ChartDataSets[] = [
-    { data: [0,18,23,11,54,110.5,13,3,5.4,28.8,15,2.5,2,32.5,6,4,6.5,114.9,109.6,11.4,20.2,0,25.6,5], label: 'Mensual' },
-    { data: [8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5,8.2,7.5,7.7,20.3,63.6,109.2,71.6,70.8,77.4,37,9.3,2.5], label: 'Normal', yAxisID: 'y-axis-1' }
-  ];
-  public lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  @Input() lineChartData: ChartDataSets[] = [];
+  @Input() lineChartLabels: Label[] =[];
+  @Input() texto: ChartOptions []=[];
+  // public lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   public lineChartOptions: (ChartOptions & { annotation: any }) = {
     responsive: true,
     maintainAspectRatio: false,
@@ -81,13 +80,21 @@ export class LineComponent implements OnInit {
   public lineChartLegend = true;
   public lineChartType: ChartType = 'line';
 
+  
 
-  public nuevosLabes : Label[] = ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83' ];
+  // public nuevosLabes : Label[] = ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83' ];
   constructor() { 
+
+    // console.log("ChartOption: ",this.lineChartOptions.title?.text);
+    // this.lineChartOptions.title?.text = this.titulo;
+    // this.lineChartOptions.title?.text=this.titulo;
+    // console.log(this.lineChartData);
 
   }
 
   ngOnInit(): void {
+    // console.log(this.texto);
+    this.lineChartOptions.title?.text = this.texto;
   }
 
 }

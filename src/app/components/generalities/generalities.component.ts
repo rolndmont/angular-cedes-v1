@@ -31,10 +31,6 @@ export class GeneralitiesComponent implements OnInit {
     this.Angel = this._municipioService.getAng();
     this.Tehua = this._municipioService.getT();
     this.Mixteca = this._municipioService.getMIX();
-
-    // console.log(this.SierraN);
-    // console.log(this.SieraNor);
-    // console.log(this.Mixteca);
   }
   
   viewRegion( identiRegion: number ){

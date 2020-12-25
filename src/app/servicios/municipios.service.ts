@@ -19,7 +19,38 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 760.23 Km^2, que lo ubica en el 3 lugar con respecto a los demás municipios del estado',
       clima: 'El municipio se localiza dentro de la zona de los templados de la sierra norte; se identifican dos climas: o    Clima semifrío subhúmedo con lluvias en verano; temperatura media anual entre 5 y 12ºC; temperatura del mes más frío entre -3 y, 18ºC; precipitación del mes más seco menor de 40 milímetros; la precipitación invernal con respecto a la anual es entre 5 y 10.2 por ciento. o Se presentan en las cumbres del peñón del Rosario y en los cerros las Tablas, así como en el conjunto montañoso del extremo oeste. o    El templado subhúmedo con lluvias en verano; temperatura media anual entre 12 y 18ºC; temperatura del mes más frío entre -3 y 18ºC; precipitación del mes más seco menor de 40 milímetros; la precipitación invernal con respecto a la anual es entre 5 y 10.2 por ciento. o    Se identifica en las estribaciones bajas del peñón del Rosario y de los cerros Las Tablas, así como el extremo norte. Es el clima predominante  ',
       recursos: 'Cuenta con una gran variedad de especies forestales, mismos que son explotados y que convierten el municipio en uno de los principales productores de madera a nivel estatal: o  Minería: entre sus principales yacimientos encontramos: ocre, tepelttxyl-arcilla',
-      principales: ''
+      principales: '',
+      grafica: [
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-10','feb-10','mar-10','abr-10','may-10','jun-10','jul-10','ago-10','sep-10','oct-10','nov-10','dic-10','ene-11','feb-11','mar-11','abr-11','may-11','jun-11','jul-11','ago-11','sep-11','oct-11','nov-11','dic-11'],
+          chartData: [
+            { data: [46.7,86.7,12.7,84.6,17.8,31.3,290.3,179.3,253.1,64.8,9.3,3,4.9,1,5.9,63.4,31,162.9,189.3,266.6,113.9,49,17.9,9.7], label: 'Mensual' },
+            { data: [14.7,16.5,17,39.1,52.5,120.4,124,102.6,140.4,91.6,21.5,9.6,14.7,16.5,17,39.1,52.5,120.4,124,102.6,140.4,91.6,21.5,9.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada CHIGNAHUAPAN Fenómeno del Niño 2010-2011'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-91','feb-91','mar-91','abr-91','may-91','jun-91','jul-91','ago-91','sep-91','oct-91','nov-91','dic-91','ene-92','feb-92','mar-92','abr-92','may-92','jun-92','jul-92','ago-92','sep-92','oct-92','nov-92','dic-92'],
+          chartData: [
+            { data: [14.1,8.2,6.1,17.2,15.7,220,110.4,29.1,118.3,102.2,33.7,4,73.9,15.5,55.8,68.7,107.8,83.9,68.8,117.7,138,80.8,34,0], label: 'Mensual' },
+            { data: [14.7,16.5,17,39.1,52.5,120.4,124,102.6,140.4,91.6,21.5,9.6,14.7,16.5,17,39.1,52.5,120.4,124,102.6,140.4,91.6,21.5,9.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada CHIGNAHUAPAN Fenómeno del Niño 1991-1992'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83'],
+          chartData: [
+            { data: [0.3,7.9,3.9,30.4,44.2,21.5,30.5,30.6,72.6,62.4,7.6,9.9,16,9.7,6.7,0,21,41,137.4,55.6,103.6,41.5,51.3,1.3,], label: 'Mensual' },
+            { data: [14.7,16.5,17,39.1,52.5,120.4,124,102.6,140.4,91.6,21.5,9.6,14.7,16.5,17,39.1,52.5,120.4,124,102.6,140.4,91.6,21.5,9.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada CHIGNAHUAPAN Fenómeno del Niño 1982-1983'
+        }]
     },
     {
       idR: 1,
@@ -30,7 +61,58 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 250.41 Km^2 que lo ubica en lugar 84 con respecto a los demás municipios del Estado',
       clima: 'En el municipio se pueden identificar dos climas: clima templado húmedo, con lluvias todo el año; temperatura media anual entre 12 y 18º C; temperatura del mes más frío entre -3 y 18º C; precipitación del mes más seco mayor de 40 milímetros, por ciento de lluvia invernal con respecto a la anual es menor de 18. clima semicálido subhúmedo, con lluvias todo el año; temperatura media anual mayor de 18º C; precipitación del mes más seco mayor de 40 milímetros, por ciento de lluvia, invernal con respecto a la anual menor de 18. Se presenta en las partes más bajas del municipio al oriente.',
       recursos: 'Cuenta con bosques de pino, existen criaderos de trucha en Teopancingo y carpa en la presa de Tenango',
-      principales: ''
+      principales: '',
+      grafica: [
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-10','feb-10','mar-10','abr-10','may-10','jun-10','jul-10','ago-10','sep-10','oct-10','nov-10','dic-10','ene-11','feb-11','mar-11','abr-11','may-11','jun-11','jul-11','ago-11','sep-11','oct-11','nov-11','dic-11'],
+          chartData: [
+            { data: [68.8,60.8,36.9,113.8,26.3,285,730,400.6,483.3,134.5,71.6,17.4,35.3,23.1,29.4,44.1,109.7,304.3,574.8,460.2,243.3,127.2,100.7,63.6,], label: 'Mensual' },
+            { data: [50.2,47.5,43.2,64.5,69.6,284.2,400.2,356,361.1,224.7,83,47.5,50.2,47.5,43.2,64.5,69.6,284.2,400.2,356,361.1,224.7,83,47.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada HUAUCHINANGO Fenómeno del Niño 2010-2011'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-97','feb-97','mar-97','abr-97','may-97','jun-97','jul-97','ago-97','sep-97','oct-97','nov-97','dic-97','ene-98','feb-98','mar-98','abr-98','may-98','jun-98','jul-98','ago-98','sep-98','oct-98','nov-98','dic-98'],
+          chartData: [
+            { data: [6.6,54.6,94.2,99.6,118.1,152.2,372.9,200.3,331,201.3,75.4,31.4,31.6,4.8,39.9,33.4,0,153.2,576.8,302.2,388.1,469.2,111.5,25.1,], label: 'Mensual' },
+            { data: [50.2,47.5,43.2,64.5,69.6,284.2,400.2,356,361.1,224.7,83,47.5,50.2,47.5,43.2,64.5,69.6,284.2,400.2,356,361.1,224.7,83,47.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada HUAUCHINANGO Fenómeno del Niño 1997-1998'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-91','feb-91','mar-91','abr-91','may-91','jun-91','jul-91','ago-91','sep-91','oct-91','nov-91','dic-91','ene-92','feb-92','mar-92','abr-92','may-92','jun-92','jul-92','ago-92','sep-92','oct-92','nov-92','dic-92'],
+          chartData: [
+            { data: [95.1,40.2,49,27.2,18.5,328.5,325.4,221.1,178.9,58.8,132.6,73.7,113.1,70,60.8,80.5,125.3,115.9,505.4,218,378.3,422.5,76.8,17.8], label: 'Mensual' },
+            { data: [50.2,47.5,43.2,64.5,69.6,284.2,400.2,356,361.1,224.7,83,47.5,50.2,47.5,43.2,64.5,69.6,284.2,400.2,356,361.1,224.7,83,47.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada HUAUCHINANGO Fenómeno del Niño 1991-1992'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-88','feb-88','mar-88','abr-88','may-88','jun-88','jul-88','ago-88','sep-88','oct-88','nov-88','dic-88','ene-89','feb-89','mar-89','abr-89','may-89','jun-89','jul-89','ago-89','sep-89','oct-89','nov-89','dic-89'],
+          chartData: [
+            { data: [30.8,39.5,47.2,74.5,20.5,276.5,384.1,333.2,275,110.2,47,79,0,0,15,51,55.5,75.1,398.8,318.5,454,92,0,0], label: 'Mensual' },
+            { data: [50.2,47.5,43.2,64.5,69.6,284.2,400.2,356,361.1,224.7,83,47.5,50.2,47.5,43.2,64.5,69.6,284.2,400.2,356,361.1,224.7,83,47.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada HUAUCHINANGO Fenómeno de la Niña 1988-1989'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83'],
+          chartData: [
+            { data: [31.7,54.9,41.5,123.5,89.2,54,277.5,142,264,221,58,69,80.2,27,28,24.5,43.5,171.5,717.5,348.2,323.8,176.5,70.5,75], label: 'Mensual' },
+            { data: [50.2,47.5,43.2,64.5,69.6,284.2,400.2,356,361.1,224.7,83,47.5,50.2,47.5,43.2,64.5,69.6,284.2,400.2,356,361.1,224.7,83,47.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada HUAUCHINANGO Fenómeno del Niño 1982-1983'
+        }]
     },
     {
       idR: 1,
@@ -41,7 +123,8 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 23.15 kilómetros cuadrados que lo ubican en el lugar 175 con respecto a los demás municipios del estado',
       clima: 'El municipio se ubica en la transición de los climas templados de la Sierra Norte y los cálidos del declive del Golfo; presenta dos climas: clima semicálido: Subhúmedo con lluvias todo el año temperatura media anual mayor de 18ºC; temperatura del mes más frío entre 3 y 18ºC; precipitación del mes más seco mayor de 40 milímetros; por ciento de lluvia invernal con respecto a la anual menor de 18. Es el clima predominante; se identifica en la porción central y sudoccidental. clima cálido: Con lluvias todo el año; temperatura media anual mayor de 22ºC; la temperatura del mes más frío es mayor de 18ºC; existe una diferencia porcentual de lluvia invernal con respecto a la anual menor de 18; la precipitación del mes más seco es mayor de 60 milímetros y se presenta en la porción oriental del municipio',
       recursos: '',
-      principales: 'El municipio conserva pocas áreas con vegetación natural; tan sólo quedan bosques de pino-encino en áreas reducidas al poniente y al sur. El resto del territorio ha sufrido una fuerte deforestación; se han implantado pastizales al norte y en la porción central se cuentan con zonas dedicadas a la Agricultura. '
+      principales: 'El municipio conserva pocas áreas con vegetación natural; tan sólo quedan bosques de pino-encino en áreas reducidas al poniente y al sur. El resto del territorio ha sufrido una fuerte deforestación; se han implantado pastizales al norte y en la porción central se cuentan con zonas dedicadas a la Agricultura. ',
+      grafica:[]
     },
     {
       idR: 1,
@@ -52,7 +135,8 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 328.80 kilómetros cuadrados lo que lo ubica en el lugar 27º con respecto a los demás municipios del Estado',
       clima: 'El municipio se ubica dentro de la zona de climas templados de la Sierra Norte; conforme se avanza de sur a norte, se incrementa la humedad, identificándose los siguientes climas: clima templado subhúmedo con lluvias en verano; temperatura media anual entre 12 y 18ºC; precipitación del mes más seco menor de 40 milímetros; por ciento de precipitación invernal con respecto a la anual menor de 5. Cubre una amplia franja del centro. clima templado húmedo con lluvias todo el año; temperatura media anual entre 12 y 18ºC; temperatura del mes más frío entre -3 y 18ºC; precipitación del mes más seco mayor de 40 milímetros; por ciento de precipitación de lluvia invernal con respecto a la anual, menor de 18. Se presenta al extremo noroeste. clima semicálido subhúmedo con lluvias todo el año; temperatura media anual mayor de 18ºC; temperatura del mes más frío entre -3 y 18ºC; precipitación del mes más seco mayor de 40 milímetros; porciento de la lluvia invernal con respecto a la anual, menor de 18. Se presenta en el extremo noroeste del municipio',
       recursos: 'Cuentan con recursos forestales tales como bosques de pino chino, ocote, encino y encino negro: o    En cuento a fauna silvestre existe conejo, ardilla, armadillo y tlacuache. o    Existen yacimientos y minas de oro en la comunidad de la cañada. ',
-      principales: 'El municipio presenta la mayor parte de su territorio cubierto de bosques, tanto de pinos, como de asociaciones de pino-encino, destacan los siguientes: pino colorado, lacia y ayacahuite; encino colorado, cesante y oyamel. o   Entre mezclados en las zonas montañosas, generalmente a los lados de las carreteras y de algunos ríos, se encuentran áreas incorporadas a la actividad agrícola de tipo temporal, que poco a poco le han ido ganando terreno a los bosques. Al poniente, a lo largo de la carretera Aquixtla-Tetela de Ocampo, se ha implantado una zona de riego, usando las aguas del río Texocoapa.'
+      principales: 'El municipio presenta la mayor parte de su territorio cubierto de bosques, tanto de pinos, como de asociaciones de pino-encino, destacan los siguientes: pino colorado, lacia y ayacahuite; encino colorado, cesante y oyamel. o   Entre mezclados en las zonas montañosas, generalmente a los lados de las carreteras y de algunos ríos, se encuentran áreas incorporadas a la actividad agrícola de tipo temporal, que poco a poco le han ido ganando terreno a los bosques. Al poniente, a lo largo de la carretera Aquixtla-Tetela de Ocampo, se ha implantado una zona de riego, usando las aguas del río Texocoapa.',
+      grafica:[]
     },
     {
       idR: 1,
@@ -63,7 +147,58 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 312.30 kilómetros cuadrados que lo ubican en el lugar 34 con respecto a los demás municipios del estado',
       clima: 'En el municipio se presenta la transición de los climas templados de la sierra norte, a los cálidos del declive del Golfo; se identifican dos climas: clima semicálido subhúmedo con lluvias todo el año; temperatura media anual mayor de 18ºC; temperatura del mes más frío entre -3º y 18ºC; precipitación del mes más seco mayor de 40 milímetros; la lluvia invernal con respecto a la anual es menor en un 18 por ciento. Es el clima predominante, se identifica en la porción central y meridional.  Clima cálido-húmedo con lluvias todo el año; temperatura media anual mayor de 22ºC; temperatura del mes más frío mayor de 18ºC; la lluvia invernal con respecto a la anual es menor de 18 por ciento; la precipitación del mes más seco es mayor de 60 milímetros. Se identifica en la porción septentrional del municipio',
       recursos: 'Existen bosques de encino y de explotación forestal, en esta actividad se explotan las maderas finas y de construcción. Minería: En esta rama económica tenemos en existencia, barita, plomo, arcilla, feldespato, cobre, plata y el beneficiado es el no metálico barita',
-      principales: 'La mayor parte del territorio ha perdido su vegetación natural; tan sólo subsisten algunas áreas de selva alta perennifolia al noreste y suroeste y centro-este'
+      principales: 'La mayor parte del territorio ha perdido su vegetación natural; tan sólo subsisten algunas áreas de selva alta perennifolia al noreste y suroeste y centro-este',
+      grafica: [
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-10','feb-10','mar-10','abr-10','may-10','jun-10','jul-10','ago-10','sep-10','oct-10','nov-10','dic-10','ene-11','feb-11','mar-11','abr-11','may-11','jun-11','jul-11','ago-11','sep-11','oct-11','nov-11','dic-11'],
+          chartData: [
+            { data: [89.9,76,32.6,83.7,62.9,376.8,878,614.7,692.8,140.2,113.4,21.9,51.7,15.1,79.5,23,107.8,502.7,1152.3,699,354,190.9,143.8,104.7], label: 'Mensual' },
+            { data: [57.5,64,54.4,93.9,163.9,467,546.5,537,629.8,364.2,124,63.6,57.5,64,54.4,93.9,163.9,467,546.5,537,629.8,364.2,124,63.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada XICOTEPEC Fenómeno del Niño 2010-2011'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-97','feb-97','mar-97','abr-97','may-97','jun-97','jul-97','ago-97','sep-97','oct-97','nov-97','dic-97','ene-98','feb-98','mar-98','abr-98','may-98','jun-98','jul-98','ago-98','sep-98','oct-98','nov-98','dic-98'],
+          chartData: [
+            { data: [18.7,70.9,182.7,124.9,310.4,331.9,682,380.1,607.1,339,103.3,42.6,34.1,24.7,40.5,28.8,0,151.7,668.4,402.4,718.1,795.2,312.6,28.8], label: 'Mensual' },
+            { data: [57.5,64,54.4,93.9,163.9,467,546.5,537,629.8,364.2,124,63.6,57.5,64,54.4,93.9,163.9,467,546.5,537,629.8,364.2,124,63.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada XICOTEPEC Fenómeno del Niño 1997-1998'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-91','feb-91','mar-91','abr-91','may-91','jun-91','jul-91','ago-91','sep-91','oct-91','nov-91','dic-91','ene-92','feb-92','mar-92','abr-92','may-92','jun-92','jul-92','ago-92','sep-92','oct-92','nov-92','dic-92'],
+          chartData: [
+            { data: [155.5,41.3,39.6,29.2,107.5,458.7,613,272.1,758.5,353.6,215.5,135.5,111.2,77.5,96.3,108.8,321,176.6,652.7,623.5,823.4,302.3,116.8,50.2], label: 'Mensual' },
+            { data: [57.5,64,54.4,93.9,163.9,467,546.5,537,629.8,364.2,124,63.6,57.5,64,54.4,93.9,163.9,467,546.5,537,629.8,364.2,124,63.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada XICOTEPEC Fenómeno del Niño 1991-1992'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-88','feb-88','mar-88','abr-88','may-88','jun-88','jul-88','ago-88','sep-88','oct-88','nov-88','dic-88','ene-89','feb-89','mar-89','abr-89','may-89','jun-89','jul-89','ago-89','sep-89','oct-89','nov-89','dic-89'],
+          chartData: [
+            { data: [42.4,81,55.4,205.9,72.7,520.4,743.8,464.8,564.7,292.3,66,102.3,70.3,181.5,12.8,189.8,95.3,246.9,422.5,749.7,601,155,0,76.4], label: 'Mensual' },
+            { data: [57.5,64,54.4,93.9,163.9,467,546.5,537,629.8,364.2,124,63.6,57.5,64,54.4,93.9,163.9,467,546.5,537,629.8,364.2,124,63.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada XICOTEPEC Fenómeno del Niño 1988-1989'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83'],
+          chartData: [
+            { data: [33.5,36,53.5,190.5,140.6,160.5,245.5,245.5,435.5,0,49.5,37.5,56.5,18,31.5,8.5,28,215,979,439.5,536.5,181.5,156.5,93.5], label: 'Mensual' },
+            { data: [57.5,64,54.4,93.9,163.9,467,546.5,537,629.8,364.2,124,63.6,57.5,64,54.4,93.9,163.9,467,546.5,537,629.8,364.2,124,63.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada XICOTEPEC Fenómeno del Niño 1982-1983'
+        }]
     },
     {
       idR: 1,
@@ -74,7 +209,8 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 59.73 kilómetros cuadrados, que lo ubica en el lugar 114 con respecto a los demás municipios del estado',
       clima: 'El municipio se localiza en las zonas de climas templados de la Sierra Norte, destacan dos climas: Clima Templado Húmedo con abundantes lluvias todo el año. Se presenta en la mayor área del municipio. Clima Templado con abundantes lluvias en verano, se presentan en un área reducida al norte',
       recursos: 'Se explota la madera de pino',
-      principales: 'La mayor parte del municipio es cubierto de asociaciones de pino-encino, de donde prodomina el pino colorado, pino lacio, encino glabrescens y encino carrasco. Sin embargo, estos bosques poco a poco están siendo eliminados para utilizar su madera y para abrir nuevas zonas al cultivo; así, el suroeste y sureste en áreas accesibles por carretera aparecen zonas dedicadas a la Agricultura de temporal.'
+      principales: 'La mayor parte del municipio es cubierto de asociaciones de pino-encino, de donde prodomina el pino colorado, pino lacio, encino glabrescens y encino carrasco. Sin embargo, estos bosques poco a poco están siendo eliminados para utilizar su madera y para abrir nuevas zonas al cultivo; así, el suroeste y sureste en áreas accesibles por carretera aparecen zonas dedicadas a la Agricultura de temporal.',
+      grafica:[]
     },
     {
       idR: 1,
@@ -85,7 +221,48 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 489.33 kilómetros cuadrados, que lo ubican en el séptimo lugar respecto a los demás municipios del estado',
       clima: 'Se localiza dentro de la zona de los climas templados; presenta un incremento de humedad conforme se avanza de sur a norte; se identifican los siguientes climas: clima templado subhúmedo, con lluvias en verano, temperatura media anual entre 12 y 18ºC; se presenta al extremo suroeste y extremo sureste. Clima templado húmedo, con abundantes lluvias en verano; temperatura media anual entre 12 y 18ºC, precipitación del mes más seco menor de 40 milímetros, es el clima predominante, se presenta en una franja latitudinal que cruza el municipio por el centro. Clima templado húmedo, con lluvias todo el año, temperatura media anual entre 12 y 18ºC. Precipitación del mes más seco, mayor de 40 milímetros por ciento de lluvia invernal con respecto a la anual es menor de 18. Se presenta en el norte del municipio. Clima semicálido subhúmedo con lluvias todo el año temperatura media anual mayor de 18ºC precipitación del mes más seco mayor de 40 milímetros; por ciento de lluvia invernal con respecto a la media anual menor de 18º. Se identifica en un área muy reducida del extremo norte',
       recursos: 'Mineria: Es rico en recursos minerales, encontrando yacimientos de manganeso, hierro calcita, fosforita, zinc, cuarzo, feldespato, barita, oro, plata, plomo, cobre y antimonio. Explotación Forestal: Cuenta con bosques en donde existen maderas finas como caoba, cedro, utilizados para la fabricación de muebles, en su mayoría existen pinos de diferentes especies utilizados para la construcción, artefactos de madera y muebles rústicos.',
-      principales: 'El municipio presenta grandes extensiones de bosques de coníferas, principalmente de pinos, asociaciones de boscosas de pino-encino y mesófilo de montaña; en ella se identifican especies tales como pino blanco, madroño, pino hartwegii, pino contorto, pino lacio, pino colorado sahuaro, oyamel, ocote blanco, pino chino, etc. Se encuentran dispersas por todo el territorio, destacando por su Extensión las zonas boscosas del centro, norte, este y extremo oeste.'
+      principales: 'El municipio presenta grandes extensiones de bosques de coníferas, principalmente de pinos, asociaciones de boscosas de pino-encino y mesófilo de montaña; en ella se identifican especies tales como pino blanco, madroño, pino hartwegii, pino contorto, pino lacio, pino colorado sahuaro, oyamel, ocote blanco, pino chino, etc. Se encuentran dispersas por todo el territorio, destacando por su Extensión las zonas boscosas del centro, norte, este y extremo oeste.',
+      grafica: [
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-10','feb-10','mar-10','abr-10','may-10','jun-10','jul-10','ago-10','sep-10','oct-10','nov-10','dic-10','ene-11','feb-11','mar-11','abr-11','may-11','jun-11','jul-11','ago-11','sep-11','oct-11','nov-11','dic-11'],
+          chartData: [
+            { data: [63,56,15,61,10,78,361,129,280,161,32,4,13,4,16,41,28,180,210,196,140,50,33,15], label: 'Mensual' },
+            { data: [32.2,27.4,28.6,36.3,58.2,141.9,167,151.7,236.1,131.7,47.2,27.5,32.2,27.4,28.6,36.3,58.2,141.9,167,151.7,236.1,131.7,47.2,27.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZACATLÁN Fenómeno del Niño 2010-2011'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-91','feb-91','mar-91','abr-91','may-91','jun-91','jul-91','ago-91','sep-91','oct-91','nov-91','dic-91','ene-92','feb-92','mar-92','abr-92','may-92','jun-92','jul-92','ago-92','sep-92','oct-92','nov-92','dic-92'],
+          chartData: [
+            { data: [43.6,33.2,11.7,14.4,7.9,242.7,177.3,48,223.6,154.4,59.5,42.8,76.7,41.4,63,69.5,99,131.7,182.4,220.7,311,161.2,56.7,5.6], label: 'Mensual' },
+            { data: [32.2,27.4,28.6,36.3,58.2,141.9,167,151.7,236.1,131.7,47.2,27.5,32.2,27.4,28.6,36.3,58.2,141.9,167,151.7,236.1,131.7,47.2,27.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZACATLÁN Fenómeno del Niño 1991-1992'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-88','feb-88','mar-88','abr-88','may-88','jun-88','jul-88','ago-88','sep-88','oct-88','nov-88','dic-88','ene-89','feb-89','mar-89','abr-89','may-89','jun-89','jul-89','ago-89','sep-89','oct-89','nov-89','dic-89'],
+          chartData: [
+            { data: [25.7,16.5,71.6,56.2,0,0,0,197.8,169.6,89.5,27.4,3,23.5,27,10,32.5,27.2,111.7,183.5,51.4,180.1,63.2,71.6,43.4], label: 'Mensual' },
+            { data: [32.2,27.4,28.6,36.3,58.2,141.9,167,151.7,236.1,131.7,47.2,27.5,32.2,27.4,28.6,36.3,58.2,141.9,167,151.7,236.1,131.7,47.2,27.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZACATLÁN Fenómeno de la Niña 1988-1989'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83'],
+          chartData: [
+            { data: [16.6,17.1,25.6,38,60.6,64.1,52,54.9,125.7,158.9,43.8,43.4,27.7,17.1,12,11.2,33.6,48.9,270,109.2,202.1,103.7,69.6,28.3], label: 'Mensual' },
+            { data: [32.2,27.4,28.6,36.3,58.2,141.9,167,151.7,236.1,131.7,47.2,27.5,32.2,27.4,28.6,36.3,58.2,141.9,167,151.7,236.1,131.7,47.2,27.5], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZACATLÁN Fenómeno del Niño 1982-1983'
+        }]
     }
   ];
 
@@ -99,7 +276,58 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 92.64 kilómetros cuadrados que lo ubica en el 134º lugar con respecto a los demás municipios del Estado.',
       clima: 'El Municipio se localiza en la transición de los climas templados de la Sierra Norte, a los cálidos del declive del Golfo; se identifican tres climas: Clima templado húmedo con lluvias en verano. Se presenta en una pequeña área del extremo Sur del Municipio. Clima templado húmedo con lluvias todo el año. Se intensifica en una en una franja latitudinal al centro y sur del Municipio. Clima Semicálido Húmedo, con abundante lluvias todo el año. Se presenta en el Norte del Municipio.',
       recursos: 'Los recursos más importantes son sus manantiales naturales',
-      principales: 'Los bosques siguen predominando al norte, existen mesófilo de montaña de encino y en ocasiones de pino-encino; en ellos se encuentran especies, tales como pino colorado, liquidámbar, encino y jaboncillo; en cuanto a fauna se encuentran: mázate, variedades de aves canoras como el clarín, zorras, zorrillos, siete rayas; variedad de víboras como la cascabel, etc.'
+      principales: 'Los bosques siguen predominando al norte, existen mesófilo de montaña de encino y en ocasiones de pino-encino; en ellos se encuentran especies, tales como pino colorado, liquidámbar, encino y jaboncillo; en cuanto a fauna se encuentran: mázate, variedades de aves canoras como el clarín, zorras, zorrillos, siete rayas; variedad de víboras como la cascabel, etc.',
+      grafica: [
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-10','feb-10','mar-10','abr-10','may-10','jun-10','jul-10','ago-10','sep-10','oct-10','nov-10','dic-10','ene-11','feb-11','mar-11','abr-11','may-11','jun-11','jul-11','ago-11','sep-11','oct-11','nov-11','dic-11'],
+          chartData: [
+            { data: [69.9,57.5,36.5,73,14.5,85.5,544.5,242.1,487.5,250.5,138.5,20.6,52,15,43,41.5,45.5,258.5,232.4,246,198,94.1,160.4,44.5], label: 'Mensual' },
+            { data: [48.1,49.5,37.2,63.2,74.9,176.5,184.5,195.1,363.7,230.3,120.1,51.6,48.1,49.5,37.2,63.2,74.9,176.5,184.5,195.1,363.7,230.3,120.1,51.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada TEZIUTLÁN Fenómeno del Niño 2010-2011'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-97','feb-97','mar-97','abr-97','may-97','jun-97','jul-97','ago-97','sep-97','oct-97','nov-97','dic-97','ene-98','feb-98','mar-98','abr-98','may-98','jun-98','jul-98','ago-98','sep-98','oct-98','nov-98','dic-98'],
+          chartData: [
+            { data: [7.5,43,100,64.5,85,98,228.5,106.4,349,243.7,99,28,30.3,15,30,36,0,117,245.5,117.5,306,466,182.5,23], label: 'Mensual' },
+            { data: [48.1,49.5,37.2,63.2,74.9,176.5,184.5,195.1,363.7,230.3,120.1,51.6,48.1,49.5,37.2,63.2,74.9,176.5,184.5,195.1,363.7,230.3,120.1,51.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada TEZIUTLÁN Fenómeno del Niño 1997-1998'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-91','feb-91','mar-91','abr-91','may-91','jun-91','jul-91','ago-91','sep-91','oct-91','nov-91','dic-91','ene-92','feb-92','mar-92','abr-92','may-92','jun-92','jul-92','ago-92','sep-92','oct-92','nov-92','dic-92'],
+          chartData: [
+            { data: [116,55,39,12.5,44,209,82.6,86.5,184.5,275.5,178,73.5,53.5,50.5,29,109,125.5,193,141,250,469,333.5,179.5,15.5,], label: 'Mensual' },
+            { data: [48.1,49.5,37.2,63.2,74.9,176.5,184.5,195.1,363.7,230.3,120.1,51.6,48.1,49.5,37.2,63.2,74.9,176.5,184.5,195.1,363.7,230.3,120.1,51.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada TEZIUTLÁN Fenómeno del Niño 1991-1992'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-88','feb-88','mar-88','abr-88','may-88','jun-88','jul-88','ago-88','sep-88','oct-88','nov-88','dic-88','ene-89','feb-89','mar-89','abr-89','may-89','jun-89','jul-89','ago-89','sep-89','oct-89','nov-89','dic-89'],
+          chartData: [
+            { data: [28.8,33,57.5,129,30,345.5,117.3,180.5,322.5,177.5,0,66.5,9.9,0,0,0,29,151.5,179.5,107,464.5,98.5,154,40.5], label: 'Mensual' },
+            { data: [48.1,49.5,37.2,63.2,74.9,176.5,184.5,195.1,363.7,230.3,120.1,51.6,48.1,49.5,37.2,63.2,74.9,176.5,184.5,195.1,363.7,230.3,120.1,51.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada TEZIUTLÁN Fenómeno del Niño 2010-2011'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83'],
+          chartData: [
+            { data: [38.5,45,45,115.5,119.5,147,118,135.5,422.5,232.5,78,43.9,52.5,20,28.5,18,29.5,37,199.7,175.7,283.8,174.1,149,99.4], label: 'Mensual' },
+            { data: [48.1,49.5,37.2,63.2,74.9,176.5,184.5,195.1,363.7,230.3,120.1,51.6,48.1,49.5,37.2,63.2,74.9,176.5,184.5,195.1,363.7,230.3,120.1,51.6], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada TEZIUTLÁN Fenómeno del Niño 1982-1983'
+        }]
     },
     {
       idR: 2,
@@ -110,7 +338,58 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 176.64 kilómetros cuadrados, que lo ubica en el lugar 66 con respecto a los demás municipios del Estado.',
       clima: 'El Municipio se localiza en la zona de transición entre los templados de la Sierra Norte y los cálidos del declive del golfo; Clima templado subhúmedo con lluvias de verano. Se presenta en la zona sur del municipio. Clima templado húmedo con abundante lluvia en verano. Es el clima predominante se identifica en la parte central. Clima templado húmedo con lluvias todo el año. Se presenta en la parte septentrional del municipio. Clima semicálido subhúmedo, con lluvias todo el año. Se identifica en las márgenes del río Apulco.',
       recursos: 'Se explota la madera de los bosques de la región de la sierra.',
-      principales: 'El municipio ha perdido una buena parte de su vegetación original; sin embargo, aún subsisten grandes zonas boscosas: al norte, a lo largo del río Apulco cuenta con áreas considerables de bosque mesófilo de montaña, constituido por especies arbóreas tales como jaboncillo, liquidámbar. En cuanto a fauna existen variedades silvestres existiendo especies tales como: conejo, mapache, tlacuache, ardilla, zorro, cacomixtle, liebre, tuza, rata de campo, ratón, zorrillo, armadillo, entre las aves encontramos: búho, lechuza, gavilán, gorrión, zahuate, jilguero, paloma, colibrí, mirto y tordo, entre otros; reptiles como: Lagartija, escorpión, ajolote y víbora.'
+      principales: 'El municipio ha perdido una buena parte de su vegetación original; sin embargo, aún subsisten grandes zonas boscosas: al norte, a lo largo del río Apulco cuenta con áreas considerables de bosque mesófilo de montaña, constituido por especies arbóreas tales como jaboncillo, liquidámbar. En cuanto a fauna existen variedades silvestres existiendo especies tales como: conejo, mapache, tlacuache, ardilla, zorro, cacomixtle, liebre, tuza, rata de campo, ratón, zorrillo, armadillo, entre las aves encontramos: búho, lechuza, gavilán, gorrión, zahuate, jilguero, paloma, colibrí, mirto y tordo, entre otros; reptiles como: Lagartija, escorpión, ajolote y víbora.',
+      grafica: [
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-10','feb-10','mar-10','abr-10','may-10','jun-10','jul-10','ago-10','sep-10','oct-10','nov-10','dic-10','ene-11','feb-11','mar-11','abr-11','may-11','jun-11','jul-11','ago-11','sep-11','oct-11','nov-11','dic-11'],
+          chartData: [
+            { data: [75.6,59.1,63.8,103.3,6.3,91.5,275.4,200.9,558.5,284.2,131.4,16.7,24.2,14.9,74.6,205,42.9,367.3,168.8,152,124.4,191.1,109.9,26.8], label: 'Mensual' },
+            { data: [40.3,48.1,32.8,58,76.5,133.5,120.2,141.5,329.3,261,96.3,43.7,40.3,48.1,32.8,58,76.5,133.5,120.2,141.5,329.3,261,96.3,43.7], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZACAPOAXTLA Fenómeno del Niño 2010-2011'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-97','feb-97','mar-97','abr-97','may-97','jun-97','jul-97','ago-97','sep-97','oct-97','nov-97','dic-97','ene-98','feb-98','mar-98','abr-98','may-98','jun-98','jul-98','ago-98','sep-98','oct-98','nov-98','dic-98'],
+          chartData: [
+            { data: [5.7,45.8,110.7,91,57.3,54,123.8,51.6,280.3,230.2,70.6,20.8,18.2,18.5,8.6,11.4,0,68.9,139.5,101.4,313.5,506.6,194.5,6.5], label: 'Mensual' },
+            { data: [40.3,48.1,32.8,58,76.5,133.5,120.2,141.5,329.3,261,96.3,43.7,40.3,48.1,32.8,58,76.5,133.5,120.2,141.5,329.3,261,96.3,43.7], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZACAPOAXTLA Fenómeno del Niño 1997-1998'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-91','feb-91','mar-91','abr-91','may-91','jun-91','jul-91','ago-91','sep-91','oct-91','nov-91','dic-91','ene-92','feb-92','mar-92','abr-92','may-92','jun-92','jul-92','ago-92','sep-92','oct-92','nov-92','dic-92'],
+          chartData: [
+            { data: [70.9,43.3,32.4,25.9,23.3,202.1,228.1,28.9,178.2,199.4,131.8,51.1,79.9,24.4,37.4,84.9,186.4,87.8,97.1,0,0,0,84.9,10.6], label: 'Mensual' },
+            { data: [40.3,48.1,32.8,58,76.5,133.5,120.2,141.5,329.3,261,96.3,43.7,40.3,48.1,32.8,58,76.5,133.5,120.2,141.5,329.3,261,96.3,43.7], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZACAPOAXTLA Fenómeno del Niño 1991-1992'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-88','feb-88','mar-88','abr-88','may-88','jun-88','jul-88','ago-88','sep-88','oct-88','nov-88','dic-88','ene-89','feb-89','mar-89','abr-89','may-89','jun-89','jul-89','ago-89','sep-89','oct-89','nov-89','dic-89'],
+          chartData: [
+            { data: [7,43.3,45.2,117.5,7.5,287,88,146.8,328,40.8,26.8,27.5,0,0,0,0,56,119.5,147.5,0,34.7,0,107.6,12.5], label: 'Mensual' },
+            { data: [40.3,48.1,32.8,58,76.5,133.5,120.2,141.5,329.3,261,96.3,43.7,40.3,48.1,32.8,58,76.5,133.5,120.2,141.5,329.3,261,96.3,43.7], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZACAPOAXTLA Fenómeno de la Niña 1988'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83'],
+          chartData: [
+            { data: [25,33,12.5,52,70.5,39.5,43.5,82.5,381.5,279,51,28,35,19,28,7.5,30.5,55.5,155,85,251,178,141.6,65.5], label: 'Mensual' },
+            { data: [40.3,48.1,32.8,58,76.5,133.5,120.2,141.5,329.3,261,96.3,43.7,40.3,48.1,32.8,58,76.5,133.5,120.2,141.5,329.3,261,96.3,43.7], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZACAPOAXTLA Fenómeno del Niño 1982-1983'
+        }]
     }, {
       idR: 2,
       id: 2,
@@ -120,7 +399,48 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 266.70 kilómetros cuadrados. que lo ubica en el lugar 38 con respecto a los demás municipios del estado',
       clima: 'El Municipio se localiza dentro de la zona de climas templados, se identifican tres climas: clima templado húmedo, con abundantes lluvias en verano. Se presenta en el extremo norte. Clima templado subhúmedo con lluvias de verano; es el clima predominante, ocupa la parte meridional del municipio. Clima templado húmedo con lluvia en verano; presenta en una franja latitudinal al norte del municipio.',
       recursos: 'Se explotan los bosques de madera como son; pino colorado, pino lacio, encino quebrado ocote oyameles y soyate, para la construcción.',
-      principales: 'La mayor parte de municipio esta cubierta por bosques de pino y asociaciones de pino-encino; destacan especies arbóreas siguientes: pino colorado, pino lacio, encino quebrado, ocote, oyamel y soyate acompañados en ocasiones por vegetación secundaria arbustiva.'
+      principales: 'La mayor parte de municipio esta cubierta por bosques de pino y asociaciones de pino-encino; destacan especies arbóreas siguientes: pino colorado, pino lacio, encino quebrado, ocote, oyamel y soyate acompañados en ocasiones por vegetación secundaria arbustiva.',
+      grafica: [
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['abr-97','may-97','jun-97','jul-97','ago-97','sep-97','oct-97','nov-97','dic-97','ene-98','feb-98','mar-98','abr-98','may-98','jun-98','jul-98','ago-98','sep-98','oct-98','nov-98','dic-98',],
+          chartData: [
+            { data: [70.7,70.7,64.7,47.6,40.6,69.7,86.9,14.8,10.6,1.6,2.3,0.4,1.9,0,85.9,52,61.4,177.8,120.1,18.6,1], label: 'Mensual' },
+            { data: [26.2,38.8,72.5,69.9,70.8,105.7,54.7,20.5,9.8,8.2,10.4,11.1,26.2,38.8,72.5,69.9,70.8,105.7,54.7,20.5,9.8], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZAUTLA Fenómeno del Niño 1997-1998'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-91','feb-91','mar-91','abr-91','may-91','jun-91','jul-91','ago-91','sep-91','oct-91','nov-91','dic-91','ene-92','feb-92','mar-92','abr-92','may-92','jun-92','jul-92','ago-92','sep-92','oct-92','nov-92','dic-92'],
+          chartData: [
+            { data: [8.1,5,4,9.7,18.9,41.7,92.9,36.5,75.3,45.1,17.3,9.7,46.9,2.5,33.9,43.8,75.8,75.3,67.7,70.5,99.3,57.4,22.5,0], label: 'Mensual' },
+            { data: [8.2,10.4,11.1,26.2,38.8,72.5,69.9,70.8,105.7,54.7,20.5,9.8,8.2,10.4,11.1,26.2,38.8,72.5,69.9,70.8,105.7,54.7,20.5,9.8], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZAUTLA Fenómeno del Niño 1991-1992'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-88','feb-88','mar-88','abr-88','may-88','jun-88','jul-88','ago-88','sep-88','oct-88','nov-88','dic-88','ene-89','feb-89','mar-89','abr-89','may-89','jun-89','jul-89','ago-89','sep-89','oct-89','nov-89','dic-89'],
+          chartData: [
+            { data: [0,11.7,23.5,59.9,9.7,63.5,56.7,110.1,89.1,17.5,9,10.9,5.5,0.7,11.6,13.5,14.2,83.4,82.5,74.7,191.3,6.9,17,19.6], label: 'Mensual' },
+            { data: [8.2,10.4,11.1,26.2,38.8,72.5,69.9,70.8,105.7,54.7,20.5,9.8,8.2,10.4,11.1,26.2,38.8,72.5,69.9,70.8,105.7,54.7,20.5,9.8], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZAUTLA Fenómeno de la Niña 1988-1989'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83'],
+          chartData: [
+            { data: [0.9,19.8,2.4,58,71.3,29.7,13.5,50.9,92.1,57.3,4.3,3.1,7.2,12.9,10.2,0,14.3,45,75.5,57.6,98.9,20.2,51.1,2.4], label: 'Mensual' },
+            { data: [8.2,10.4,11.1,26.2,38.8,72.5,69.9,70.8,105.7,54.7,20.5,9.8,8.2,10.4,11.1,26.2,38.8,72.5,69.9,70.8,105.7,54.7,20.5,9.8], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada ZAUTLA Fenómeno del Niño 1982-1983'
+        }]
     }
   ];
 
@@ -134,7 +454,58 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 760.23 Km^2, que lo ubica en el 3 lugar con respecto a los demás municipios del estado',
       clima: 'El municipio se localiza dentro de la zona de los templados de la sierra norte; se identifican dos climas: o    Clima semifrío subhúmedo con lluvias en verano; temperatura media anual entre 5 y 12ºC; temperatura del mes más frío entre -3 y, 18ºC; precipitación del mes más seco menor de 40 milímetros; la precipitación invernal con respecto a la anual es entre 5 y 10.2 por ciento. o Se presentan en las cumbres del peñón del Rosario y en los cerros las Tablas, así como en el conjunto montañoso del extremo oeste. o    El templado subhúmedo con lluvias en verano; temperatura media anual entre 12 y 18ºC; temperatura del mes más frío entre -3 y 18ºC; precipitación del mes más seco menor de 40 milímetros; la precipitación invernal con respecto a la anual es entre 5 y 10.2 por ciento. o    Se identifica en las estribaciones bajas del peñón del Rosario y de los cerros Las Tablas, así como el extremo norte. Es el clima predominante  ',
       recursos: 'Cuenta con una gran variedad de especies forestales, mismos que son explotados y que convierten el municipio en uno de los principales productores de madera a nivel estatal: o  Minería: entre sus principales yacimientos encontramos: ocre, tepelttxyl-arcilla',
-      principales: ''
+      principales: '',
+      grafica: [
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-10','feb-10','mar-10','abr-10','may-10','jun-10','jul-10','ago-10','sep-10','oct-10','nov-10','dic-10','ene-11','feb-11','mar-11','abr-11','may-11','jun-11','jul-11','ago-11','sep-11','oct-11','nov-11','dic-11'],
+          chartData: [
+            { data: [40.1,130.3,5,14.7,70.9,119.9,224.4,301.7,245.8,0,1.2,0,0,0,0.5,49.2,55.3,119.5,252.8,232,87.8,62.1,19.4,0], label: 'Mensual' },
+            { data: [7.7,12.8,9.7,25.4,53.8,153.8,162.9,167.7,160.6,60.8,12.5,5.3,7.7,12.8,9.7,25.4,53.8,153.8,162.9,167.7,160.6,60.8,12.5,5.3], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada CALPAN Fenómeno del Niño 2010-2011'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-97','feb-97','mar-97','abr-97','may-97','jun-97','jul-97','ago-97','sep-97','oct-97','nov-97','dic-97','ene-98','feb-98','mar-98','abr-98','may-98','jun-98','jul-98','ago-98','sep-98','oct-98','nov-98','dic-98'],
+          chartData: [
+            { data: [0,0,28.7,93.2,56,143.3,145.9,124.2,151.1,34.8,23.4,5.3,1.6,0,6,0,1.2,132.8,135.3,103.9,247.6,105.9,38.2,0], label: 'Mensual' },
+            { data: [7.7,12.8,9.7,25.4,53.8,153.8,162.9,167.7,160.6,60.8,12.5,5.3,7.7,12.8,9.7,25.4,53.8,153.8,162.9,167.7,160.6,60.8,12.5,5.3], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada CALPAN Fenómeno del Niño 1997-1998'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-91','feb-91','mar-91','abr-91','may-91','jun-91','jul-91','ago-91','sep-91','oct-91','nov-91','dic-91','ene-92','feb-92','mar-92','abr-92','may-92','jun-92','jul-92','ago-92','sep-92','oct-92','nov-92','dic-92'],
+          chartData: [
+            { data: [0,2,0,3.7,137.9,231.5,134.1,102.7,158.5,74.9,24.2,0,67.7,33.8,8.2,5.3,108.8,119.9,133.9,254.8,191.1,99.9,78.7,11.7], label: 'Mensual' },
+            { data: [7.7,12.8,9.7,25.4,53.8,153.8,162.9,167.7,160.6,60.8,12.5,5.3,7.7,12.8,9.7,25.4,53.8,153.8,162.9,167.7,160.6,60.8,12.5,5.3], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada CALPAN Fenómeno del Niño 1991-1992'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-88','feb-88','mar-88','abr-88','may-88','jun-88','jul-88','ago-88','sep-88','oct-88','nov-88','dic-88','ene-89','feb-89','mar-89','abr-89','may-89','jun-89','jul-89','ago-89','sep-89','oct-89','nov-89','dic-89'],
+          chartData: [
+            { data: [0,4,40.1,12.5,29.5,209.3,208.1,151.5,111,12,0,0,0,1.9,0,0,49.1,160.9,109.6,192.7,96.3,27.1,17.5,15], label: 'Mensual' },
+            { data: [7.7,12.8,9.7,25.4,53.8,153.8,162.9,167.7,160.6,60.8,12.5,5.3,7.7,12.8,9.7,25.4,53.8,153.8,162.9,167.7,160.6,60.8,12.5,5.3], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada CALPAN Fenómeno del Niño 1988-1989'
+        },
+        {
+          idT: 2,
+          idG: 1,
+          bChartLab:  ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83'],
+          chartData: [
+            { data: [0,17.6,10.9,25.8,63.2,54.7,63.1,49.7,77.6,39.9,0.5,0,8.3,8.4,25.3,0,8.1,75.5,180,136.8,224,35.8,6,0], label: 'Mensual' },
+            { data: [7.7,12.8,9.7,25.4,53.8,153.8,162.9,167.7,160.6,60.8,12.5,5.3,7.7,12.8,9.7,25.4,53.8,153.8,162.9,167.7,160.6,60.8,12.5,5.3], label: 'Normal', yAxisID: 'y-axis-1' }
+          ],
+          texto:'Precipitación Normal y Mensual registrada CALPAN Fenómeno del Niño 1982-1983'
+        }]
     },
     {
       idR: 3,
@@ -145,7 +516,8 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 250.41 Km^2 que lo ubica en lugar 84 con respecto a los demás municipios del Estado',
       clima: 'En el municipio se pueden identificar dos climas: clima templado húmedo, con lluvias todo el año; temperatura media anual entre 12 y 18º C; temperatura del mes más frío entre -3 y 18º C; precipitación del mes más seco mayor de 40 milímetros, por ciento de lluvia invernal con respecto a la anual es menor de 18. clima semicálido subhúmedo, con lluvias todo el año; temperatura media anual mayor de 18º C; precipitación del mes más seco mayor de 40 milímetros, por ciento de lluvia, invernal con respecto a la anual menor de 18. Se presenta en las partes más bajas del municipio al oriente.',
       recursos: 'Cuenta con bosques de pino, existen criaderos de trucha en Teopancingo y carpa en la presa de Tenango',
-      principales: ''
+      principales: '',
+      grafica:[]
     },
     {
       idR: 3,
@@ -156,7 +528,8 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 23.15 kilómetros cuadrados que lo ubican en el lugar 175 con respecto a los demás municipios del estado',
       clima: 'El municipio se ubica en la transición de los climas templados de la Sierra Norte y los cálidos del declive del Golfo; presenta dos climas: clima semicálido: Subhúmedo con lluvias todo el año temperatura media anual mayor de 18ºC; temperatura del mes más frío entre 3 y 18ºC; precipitación del mes más seco mayor de 40 milímetros; por ciento de lluvia invernal con respecto a la anual menor de 18. Es el clima predominante; se identifica en la porción central y sudoccidental. clima cálido: Con lluvias todo el año; temperatura media anual mayor de 22ºC; la temperatura del mes más frío es mayor de 18ºC; existe una diferencia porcentual de lluvia invernal con respecto a la anual menor de 18; la precipitación del mes más seco es mayor de 60 milímetros y se presenta en la porción oriental del municipio',
       recursos: '',
-      principales: 'El municipio conserva pocas áreas con vegetación natural; tan sólo quedan bosques de pino-encino en áreas reducidas al poniente y al sur. El resto del territorio ha sufrido una fuerte deforestación; se han implantado pastizales al norte y en la porción central se cuentan con zonas dedicadas a la Agricultura. '
+      principales: 'El municipio conserva pocas áreas con vegetación natural; tan sólo quedan bosques de pino-encino en áreas reducidas al poniente y al sur. El resto del territorio ha sufrido una fuerte deforestación; se han implantado pastizales al norte y en la porción central se cuentan con zonas dedicadas a la Agricultura. ',
+      grafica:[]
     },
     {
       idR: 3,
@@ -167,7 +540,8 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 328.80 kilómetros cuadrados lo que lo ubica en el lugar 27º con respecto a los demás municipios del Estado',
       clima: 'El municipio se ubica dentro de la zona de climas templados de la Sierra Norte; conforme se avanza de sur a norte, se incrementa la humedad, identificándose los siguientes climas: clima templado subhúmedo con lluvias en verano; temperatura media anual entre 12 y 18ºC; precipitación del mes más seco menor de 40 milímetros; por ciento de precipitación invernal con respecto a la anual menor de 5. Cubre una amplia franja del centro. clima templado húmedo con lluvias todo el año; temperatura media anual entre 12 y 18ºC; temperatura del mes más frío entre -3 y 18ºC; precipitación del mes más seco mayor de 40 milímetros; por ciento de precipitación de lluvia invernal con respecto a la anual, menor de 18. Se presenta al extremo noroeste. clima semicálido subhúmedo con lluvias todo el año; temperatura media anual mayor de 18ºC; temperatura del mes más frío entre -3 y 18ºC; precipitación del mes más seco mayor de 40 milímetros; porciento de la lluvia invernal con respecto a la anual, menor de 18. Se presenta en el extremo noroeste del municipio',
       recursos: 'Cuentan con recursos forestales tales como bosques de pino chino, ocote, encino y encino negro: o    En cuento a fauna silvestre existe conejo, ardilla, armadillo y tlacuache. o    Existen yacimientos y minas de oro en la comunidad de la cañada. ',
-      principales: 'El municipio presenta la mayor parte de su territorio cubierto de bosques, tanto de pinos, como de asociaciones de pino-encino, destacan los siguientes: pino colorado, lacia y ayacahuite; encino colorado, cesante y oyamel. o   Entre mezclados en las zonas montañosas, generalmente a los lados de las carreteras y de algunos ríos, se encuentran áreas incorporadas a la actividad agrícola de tipo temporal, que poco a poco le han ido ganando terreno a los bosques. Al poniente, a lo largo de la carretera Aquixtla-Tetela de Ocampo, se ha implantado una zona de riego, usando las aguas del río Texocoapa.'
+      principales: 'El municipio presenta la mayor parte de su territorio cubierto de bosques, tanto de pinos, como de asociaciones de pino-encino, destacan los siguientes: pino colorado, lacia y ayacahuite; encino colorado, cesante y oyamel. o   Entre mezclados en las zonas montañosas, generalmente a los lados de las carreteras y de algunos ríos, se encuentran áreas incorporadas a la actividad agrícola de tipo temporal, que poco a poco le han ido ganando terreno a los bosques. Al poniente, a lo largo de la carretera Aquixtla-Tetela de Ocampo, se ha implantado una zona de riego, usando las aguas del río Texocoapa.',
+      grafica:[]
     },
     {
       idR: 3,
@@ -178,7 +552,8 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 312.30 kilómetros cuadrados que lo ubican en el lugar 34 con respecto a los demás municipios del estado',
       clima: 'En el municipio se presenta la transición de los climas templados de la sierra norte, a los cálidos del declive del Golfo; se identifican dos climas: clima semicálido subhúmedo con lluvias todo el año; temperatura media anual mayor de 18ºC; temperatura del mes más frío entre -3º y 18ºC; precipitación del mes más seco mayor de 40 milímetros; la lluvia invernal con respecto a la anual es menor en un 18 por ciento. Es el clima predominante, se identifica en la porción central y meridional.  Clima cálido-húmedo con lluvias todo el año; temperatura media anual mayor de 22ºC; temperatura del mes más frío mayor de 18ºC; la lluvia invernal con respecto a la anual es menor de 18 por ciento; la precipitación del mes más seco es mayor de 60 milímetros. Se identifica en la porción septentrional del municipio',
       recursos: 'Existen bosques de encino y de explotación forestal, en esta actividad se explotan las maderas finas y de construcción. Minería: En esta rama económica tenemos en existencia, barita, plomo, arcilla, feldespato, cobre, plata y el beneficiado es el no metálico barita',
-      principales: 'La mayor parte del territorio ha perdido su vegetación natural; tan sólo subsisten algunas áreas de selva alta perennifolia al noreste y suroeste y centro-este'
+      principales: 'La mayor parte del territorio ha perdido su vegetación natural; tan sólo subsisten algunas áreas de selva alta perennifolia al noreste y suroeste y centro-este',
+      grafica:[]
     },
     {
       idR: 3,
@@ -189,7 +564,8 @@ export class MunicipiosService {
       extension: 'Tiene una superficie de 59.73 kilómetros cuadrados, que lo ubica en el lugar 114 con respecto a los demás municipios del estado',
       clima: 'El municipio se localiza en las zonas de climas templados de la Sierra Norte, destacan dos climas: Clima Templado Húmedo con abundantes lluvias todo el año. Se presenta en la mayor área del municipio. Clima Templado con abundantes lluvias en verano, se presentan en un área reducida al norte',
       recursos: 'Se explota la madera de pino',
-      principales: 'La mayor parte del municipio es cubierto de asociaciones de pino-encino, de donde prodomina el pino colorado, pino lacio, encino glabrescens y encino carrasco. Sin embargo, estos bosques poco a poco están siendo eliminados para utilizar su madera y para abrir nuevas zonas al cultivo; así, el suroeste y sureste en áreas accesibles por carretera aparecen zonas dedicadas a la Agricultura de temporal.'
+      principales: 'La mayor parte del municipio es cubierto de asociaciones de pino-encino, de donde prodomina el pino colorado, pino lacio, encino glabrescens y encino carrasco. Sin embargo, estos bosques poco a poco están siendo eliminados para utilizar su madera y para abrir nuevas zonas al cultivo; así, el suroeste y sureste en áreas accesibles por carretera aparecen zonas dedicadas a la Agricultura de temporal.',
+      grafica:[]
     }
 
   ];
@@ -270,7 +646,8 @@ export class MunicipiosService {
       extension: 'El municipio de Tehuacán representa el 1.15% de la superficie del Estado. Abarcando una Extensión aproximada de 553.57 kilómetros cuadrados, que lo ubican en el lugar 18º con respecto a los demás municipios del Estado',
       clima: 'Por su ubicación Extensión y configuración presenta una gran variedad de climas que van desde los templados en la sierra de Zapotitlán, hasta los templados de la Sierra de Zongolica, pasando por los cálidos del Valle de Tehuacán. clima templado subhúmedo con lluvias en verano; se ubica en el extremo poniente de la parte elevada de la Sierra de Zapotitlán. Clima seco semicálido con lluvias en verano y escasas a lo largo del año; se identifica en la parte sur del municipio, dentro del Valle de Tehuacán. Clima semiseco cálido lluvias en verano y escasas a lo largo del año; es el clima predominante en el área correspondiente al Valle de Tehuacán. Clima semiseco templado con lluvias en verano y escasas a lo largo del año; es el clima que se presenta entre las zonas orientales del Valle de Tehuacán, y las primeras estribaciones de la Sierra de Zongolica',
       recursos: 'Los recursos más importantes son sus manantiales naturales',
-      principales: 'El municipio presenta una gran variedad vegetativa. En áreas del Valle que no están suficientemente planas, pero que tampoco son demasiado accidentadas, se presentan zonas de mezquitales. La vegetación que presentan el declive oriental de la Sierra de Zapotitlán y el occidental de la Sierra de Zongolica, constituida, principalmente, por matorral desértico rosetófilo, en ocasiones asociado a vegetación secundaria arbustiva o matorral subinerme; también se encuentran chaparrales y vegetación de selva baja caducifolia. El noreste, del municipio donde la Sierra de Zongolica alcanza mayor altura y el clima ya es templado, se presentan bosques de pino-encino y pino.'
+      principales: 'El municipio presenta una gran variedad vegetativa. En áreas del Valle que no están suficientemente planas, pero que tampoco son demasiado accidentadas, se presentan zonas de mezquitales. La vegetación que presentan el declive oriental de la Sierra de Zapotitlán y el occidental de la Sierra de Zongolica, constituida, principalmente, por matorral desértico rosetófilo, en ocasiones asociado a vegetación secundaria arbustiva o matorral subinerme; también se encuentran chaparrales y vegetación de selva baja caducifolia. El noreste, del municipio donde la Sierra de Zongolica alcanza mayor altura y el clima ya es templado, se presentan bosques de pino-encino y pino.',
+      grafica:[]
     },
     {
       idR: 4,
@@ -281,7 +658,8 @@ export class MunicipiosService {
       extension: 'El municipio de Tehuacán representa el 1.15% de la superficie del Estado. Abarcando una Extensión aproximada de 553.57 kilómetros cuadrados, que lo ubican en el lugar 18º con respecto a los demás municipios del Estado',
       clima: 'Por su ubicación Extensión y configuración presenta una gran variedad de climas que van desde los templados en la sierra de Zapotitlán, hasta los templados de la Sierra de Zongolica, pasando por los cálidos del Valle de Tehuacán. clima templado subhúmedo con lluvias en verano; se ubica en el extremo poniente de la parte elevada de la Sierra de Zapotitlán. Clima seco semicálido con lluvias en verano y escasas a lo largo del año; se identifica en la parte sur del municipio, dentro del Valle de Tehuacán. Clima semiseco cálido lluvias en verano y escasas a lo largo del año; es el clima predominante en el área correspondiente al Valle de Tehuacán. Clima semiseco templado con lluvias en verano y escasas a lo largo del año; es el clima que se presenta entre las zonas orientales del Valle de Tehuacán, y las primeras estribaciones de la Sierra de Zongolica',
       recursos: 'Los recursos más importantes son sus manantiales naturales',
-      principales: 'El municipio presenta una gran variedad vegetativa. En áreas del Valle que no están suficientemente planas, pero que tampoco son demasiado accidentadas, se presentan zonas de mezquitales. La vegetación que presentan el declive oriental de la Sierra de Zapotitlán y el occidental de la Sierra de Zongolica, constituida, principalmente, por matorral desértico rosetófilo, en ocasiones asociado a vegetación secundaria arbustiva o matorral subinerme; también se encuentran chaparrales y vegetación de selva baja caducifolia. El noreste, del municipio donde la Sierra de Zongolica alcanza mayor altura y el clima ya es templado, se presentan bosques de pino-encino y pino.'
+      principales: 'El municipio presenta una gran variedad vegetativa. En áreas del Valle que no están suficientemente planas, pero que tampoco son demasiado accidentadas, se presentan zonas de mezquitales. La vegetación que presentan el declive oriental de la Sierra de Zapotitlán y el occidental de la Sierra de Zongolica, constituida, principalmente, por matorral desértico rosetófilo, en ocasiones asociado a vegetación secundaria arbustiva o matorral subinerme; también se encuentran chaparrales y vegetación de selva baja caducifolia. El noreste, del municipio donde la Sierra de Zongolica alcanza mayor altura y el clima ya es templado, se presentan bosques de pino-encino y pino.',
+      grafica:[]
     },
     {
       idR: 4,
@@ -292,7 +670,8 @@ export class MunicipiosService {
       extension: 'El municipio de Tehuacán representa el 1.15% de la superficie del Estado. Abarcando una Extensión aproximada de 553.57 kilómetros cuadrados, que lo ubican en el lugar 18º con respecto a los demás municipios del Estado',
       clima: 'Por su ubicación Extensión y configuración presenta una gran variedad de climas que van desde los templados en la sierra de Zapotitlán, hasta los templados de la Sierra de Zongolica, pasando por los cálidos del Valle de Tehuacán. clima templado subhúmedo con lluvias en verano; se ubica en el extremo poniente de la parte elevada de la Sierra de Zapotitlán. Clima seco semicálido con lluvias en verano y escasas a lo largo del año; se identifica en la parte sur del municipio, dentro del Valle de Tehuacán. Clima semiseco cálido lluvias en verano y escasas a lo largo del año; es el clima predominante en el área correspondiente al Valle de Tehuacán. Clima semiseco templado con lluvias en verano y escasas a lo largo del año; es el clima que se presenta entre las zonas orientales del Valle de Tehuacán, y las primeras estribaciones de la Sierra de Zongolica',
       recursos: 'Los recursos más importantes son sus manantiales naturales',
-      principales: 'El municipio presenta una gran variedad vegetativa. En áreas del Valle que no están suficientemente planas, pero que tampoco son demasiado accidentadas, se presentan zonas de mezquitales. La vegetación que presentan el declive oriental de la Sierra de Zapotitlán y el occidental de la Sierra de Zongolica, constituida, principalmente, por matorral desértico rosetófilo, en ocasiones asociado a vegetación secundaria arbustiva o matorral subinerme; también se encuentran chaparrales y vegetación de selva baja caducifolia. El noreste, del municipio donde la Sierra de Zongolica alcanza mayor altura y el clima ya es templado, se presentan bosques de pino-encino y pino.'
+      principales: 'El municipio presenta una gran variedad vegetativa. En áreas del Valle que no están suficientemente planas, pero que tampoco son demasiado accidentadas, se presentan zonas de mezquitales. La vegetación que presentan el declive oriental de la Sierra de Zapotitlán y el occidental de la Sierra de Zongolica, constituida, principalmente, por matorral desértico rosetófilo, en ocasiones asociado a vegetación secundaria arbustiva o matorral subinerme; también se encuentran chaparrales y vegetación de selva baja caducifolia. El noreste, del municipio donde la Sierra de Zongolica alcanza mayor altura y el clima ya es templado, se presentan bosques de pino-encino y pino.',
+      grafica:[]
     },
     {
       idR: 4,
@@ -303,7 +682,8 @@ export class MunicipiosService {
       extension: 'El municipio de Tehuacán representa el 1.15% de la superficie del Estado. Abarcando una Extensión aproximada de 553.57 kilómetros cuadrados, que lo ubican en el lugar 18º con respecto a los demás municipios del Estado',
       clima: 'Por su ubicación Extensión y configuración presenta una gran variedad de climas que van desde los templados en la sierra de Zapotitlán, hasta los templados de la Sierra de Zongolica, pasando por los cálidos del Valle de Tehuacán. clima templado subhúmedo con lluvias en verano; se ubica en el extremo poniente de la parte elevada de la Sierra de Zapotitlán. Clima seco semicálido con lluvias en verano y escasas a lo largo del año; se identifica en la parte sur del municipio, dentro del Valle de Tehuacán. Clima semiseco cálido lluvias en verano y escasas a lo largo del año; es el clima predominante en el área correspondiente al Valle de Tehuacán. Clima semiseco templado con lluvias en verano y escasas a lo largo del año; es el clima que se presenta entre las zonas orientales del Valle de Tehuacán, y las primeras estribaciones de la Sierra de Zongolica',
       recursos: 'Los recursos más importantes son sus manantiales naturales',
-      principales: 'El municipio presenta una gran variedad vegetativa. En áreas del Valle que no están suficientemente planas, pero que tampoco son demasiado accidentadas, se presentan zonas de mezquitales. La vegetación que presentan el declive oriental de la Sierra de Zapotitlán y el occidental de la Sierra de Zongolica, constituida, principalmente, por matorral desértico rosetófilo, en ocasiones asociado a vegetación secundaria arbustiva o matorral subinerme; también se encuentran chaparrales y vegetación de selva baja caducifolia. El noreste, del municipio donde la Sierra de Zongolica alcanza mayor altura y el clima ya es templado, se presentan bosques de pino-encino y pino.'
+      principales: 'El municipio presenta una gran variedad vegetativa. En áreas del Valle que no están suficientemente planas, pero que tampoco son demasiado accidentadas, se presentan zonas de mezquitales. La vegetación que presentan el declive oriental de la Sierra de Zapotitlán y el occidental de la Sierra de Zongolica, constituida, principalmente, por matorral desértico rosetófilo, en ocasiones asociado a vegetación secundaria arbustiva o matorral subinerme; también se encuentran chaparrales y vegetación de selva baja caducifolia. El noreste, del municipio donde la Sierra de Zongolica alcanza mayor altura y el clima ya es templado, se presentan bosques de pino-encino y pino.',
+      grafica:[]
     }
   ];
 

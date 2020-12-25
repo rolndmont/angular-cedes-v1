@@ -10,22 +10,22 @@ import { Color, Label } from 'ng2-charts';
 })
 export class LineComponent implements OnInit {
   @Input() lineChartData: ChartDataSets[] = [];
-  @Input() lineChartLabels: Label[] =[];
-  @Input() texto: ChartOptions []=[];
+  @Input() lineChartLabels: Label[] = [];
+  @Input() tituloGrafica: any[] = [];
   // public lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   public lineChartOptions: (ChartOptions & { annotation: any }) = {
     responsive: true,
     maintainAspectRatio: false,
-      spanGaps: false,
-      title:{
-        display: true,
-        text: 'Precipitación Normal y Mensual registrada TEHUACÁN Fenómeno del Niño 1982-1983'
-      },
-			elements: {
-				line: {
-					tension: 0.000001
-				}
-			},
+    spanGaps: false,
+    title: {
+      display: true,
+      text: ''
+    },
+    elements: {
+      line: {
+        tension: 0.000001
+      }
+    },
     scales: {
       // We use this empty structure as a placeholder for dynamic theming.
       xAxes: [{}],
@@ -36,7 +36,7 @@ export class LineComponent implements OnInit {
           scaleLabel: {
             display: true,
             labelString: 'Preocipitacion mm'
-         }
+          }
         },
         {
           id: 'y-axis-1',
@@ -55,7 +55,8 @@ export class LineComponent implements OnInit {
         {
           type: 'line',
           mode: 'vertical',
-          scaleID: 'y-axis-0'}
+          scaleID: 'y-axis-0'
+        }
       ],
     },
   };
@@ -80,21 +81,19 @@ export class LineComponent implements OnInit {
   public lineChartLegend = true;
   public lineChartType: ChartType = 'line';
 
-  
 
-  // public nuevosLabes : Label[] = ['ene-82','feb-82','mar-82','abr-82','may-82','jun-82','jul-82','ago-82','sep-82','oct-82','nov-82','dic-82','ene-83','feb-83','mar-83','abr-83','may-83','jun-83','jul-83','ago-83','sep-83','oct-83','nov-83','dic-83' ];
-  constructor() { 
 
-    // console.log("ChartOption: ",this.lineChartOptions.title?.text);
-    // this.lineChartOptions.title?.text = this.titulo;
-    // this.lineChartOptions.title?.text=this.titulo;
-    // console.log(this.lineChartData);
+  constructor() {
 
   }
 
   ngOnInit(): void {
-    // console.log(this.texto);
-    this.lineChartOptions.title?.text = this.texto;
+  }
+
+
+
+  public agregar(uno: any[]): void {
+
   }
 
 }

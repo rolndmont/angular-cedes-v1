@@ -29,29 +29,24 @@
         </div>
     </div>
     <hr>
-    <!-- <div class="row">
-        <div class="col-md-12">
-            <h4> Resultados obtenidos en el taller: </h4>
-            <app-line [lineChartData]="municipioSeleccionado.grafica[0].chartData" [lineChartLabels]="municipioSeleccionado.grafica[0].bChartLab" ></app-line>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <app-line [lineChartData]="municipioSeleccionado.grafica[1].chartData" [lineChartLabels]="municipioSeleccionado.grafica[1].bChartLab" ></app-line>
-        </div>
-    </div> -->
     <h4> Resultados obtenidos en el taller: </h4>
+
     <div class="row" *ngFor="let item of municipioSeleccionado.grafica; let i=index">
         <div class="col-md-12">
-            <!-- <p class="text-center">
-                {{ municipioSeleccionado.grafica[i].texto }}
-            </p> -->
-            <app-line [texto]="municipioSeleccionado.grafica[i].texto" [lineChartData]="municipioSeleccionado.grafica[i].chartData" [lineChartLabels]="municipioSeleccionado.grafica[i].bChartLab"></app-line>
+            <div class="card text-left">
+                <div class="card-body">
+                    <h4 class="card-title">{{municipioSeleccionado.grafica[i].texto}}</h4>
+                    <app-line [lineChartData]="municipioSeleccionado.grafica[i].chartData"
+                        [lineChartLabels]="municipioSeleccionado.grafica[i].bChartLab"></app-line>
+                    <p class="card-text">descripcion</p>
+                </div>
+            </div>
+
         </div>
     </div>
 
 </div>
 <hr>
 <div>
-    
+
 </div>

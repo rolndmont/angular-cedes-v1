@@ -5,10 +5,34 @@
 </div>
 <div class="row ">
     <div class="col-md-7 col-sm-12  border-primary   p-3 mb-5  rounded ">
-        <!-- <img src="assets/images/mapa_puebla.png" alt=""> -->
-        <img src="assets/images/mapa_puebla.png" class="img-fluid" alt="Responsive image">
+        <div class="row">
+            <div class="col-md-12 col-sm-12  border-primary   p-3 mb-5  rounded ">
+                <img src="assets/images/mapa_puebla.png" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Declaratoria de Desastres 2000-2016 en 21 municipios</h4>
+                    </div>
+                    <div class="card-body">
+                        <app-one [barChartData]="barChartData5[0].chartData"
+                            [barChartLabels]="barChartData5[0].bChartLab">
+                        </app-one>
+                        <p class="card-meta text-justify">
+                            Las lluvias y heladas son los que han sido percibidos
+                            como mayor amenaza, seguido de las sequías e inundaciones
+                            y finalmente los golpes de calor.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+        <!-- <img src="assets/images/mapa_puebla.png" class="img-fluid" alt="Responsive image"> -->
     </div>
+
     <div class="col-md-5 col-ms-12 table-responsive border-primary  p-3 mb-5  rounded">
 
         <table class="table table-striped">
@@ -23,7 +47,8 @@
                 <tr>
                     <th scope="row">I</th>
                     <td>
-                        <button type="button" class="btn btn-outlet-primary" (click)="viewRegion( 1 )">Sierra Norte</button>
+                        <button type="button" class="btn btn-outlet-primary" (click)="viewRegion( 1 )">Sierra
+                            Norte</button>
                     </td>
                     <td>
                         <mat-selection-list [multiple]="false">
@@ -36,7 +61,8 @@
                 <tr>
                     <th scope="row">II</th>
                     <td>
-                        <button type="button" class="btn btn-outlet-primary"  (click)="viewRegion( 2 )">Sierra Nororiental</button>
+                        <button type="button" class="btn btn-outlet-primary" (click)="viewRegion( 2 )">Sierra
+                            Nororiental</button>
                     </td>
                     <td>
                         <mat-selection-list [multiple]="false">
@@ -49,7 +75,8 @@
                 <tr>
                     <th scope="row">IV</th>
                     <td>
-                        <button type="button" class="btn btn-outlet-primary"  (click)="viewRegion( 4 )">Angelopolis</button>
+                        <button type="button" class="btn btn-outlet-primary"
+                            (click)="viewRegion( 4 )">Angelopolis</button>
                     </td>
                     <td>
                         <mat-selection-list [multiple]="false">
@@ -62,7 +89,7 @@
                 <tr>
                     <th scope="row">VI</th>
                     <td>
-                        <button type="button" class="btn btn-outlet-primary"  (click)="viewRegion( 6 )">Mixteca</button>
+                        <button type="button" class="btn btn-outlet-primary" (click)="viewRegion( 6 )">Mixteca</button>
                     </td>
                     <td>
                         <mat-selection-list [multiple]="false">
@@ -75,7 +102,8 @@
                 <tr>
                     <th scope="row">VII</th>
                     <td>
-                        <button type="button" class="btn btn-outlet-primary"  (click)="viewRegion( 7 )">Tehuacan y Sierra Negra</button>
+                        <button type="button" class="btn btn-outlet-primary" (click)="viewRegion( 7 )">Tehuacan y Sierra
+                            Negra</button>
                     </td>
                     <td>
                         <mat-selection-list [multiple]="false">

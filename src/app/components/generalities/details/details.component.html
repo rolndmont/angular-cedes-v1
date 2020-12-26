@@ -2,42 +2,46 @@
     <h3 class="text-center">{{ municipioSeleccionado.nombre }} </h3>
     <div class="row">
         <div class="col-md-7 col-sm-12">
-            <img [src]="municipioSeleccionado.imagen" alt="{{municipioSeleccionado.nombre}}">
+            <img [src]="municipioSeleccionado.imagen" alt="{{municipioSeleccionado.nombre}}" class="img-fluid"
+                alt="Responsive image">
             <h4>Localización:</h4>
             <p class="text-justify"> {{ municipioSeleccionado.descripcion }} </p>
             <h4>Extensión:</h4>
             <p class="text-justify"> {{ municipioSeleccionado.extension }} </p>
         </div>
         <div class="col-md-5 col-sm-12">
-            <h4>Clima:</h4>
+            <h4 *ngIf="municipioSeleccionado.clima != null">Clima:</h4>
             <p class="text-justify"> {{ municipioSeleccionado.clima }} </p>
-            <h4> Recursos Naturales: </h4>
+            <h4 *ngIf="municipioSeleccionado.recursos != null"> Recursos Naturales: </h4>
             <p class="text-justify"> {{ municipioSeleccionado.recursos }} </p>
-            <h4>Principales Ecosistemas: </h4>
+            <h4 *ngIf="municipioSeleccionado.principales != null">Principales Ecosistemas: </h4>
             <p class="text-justify"> {{ municipioSeleccionado.principales }} </p>
 
         </div>
     </div>
     <div class="row">
         <div class="col-md-10 col-ms-12">
-            <p>Bibliografia:
-                Enciclopedia de Los Municipios y Delegaciones de México
-                Estado de Puebla.
+            <p class="text-justify">Bibliografia:
+                Enciclopedia de Los Municipios y Delegaciones de México Estado de Puebla.
+                http://www.inafed.gob.mx/work/enciclopedia/EMM21puebla/municipios/municipios.html
             </p>
-            <p>
-                http://www.inafed.gob.mx/work/enciclopedia/EMM21puebla/municipios/municipios.html</p>
+            <!-- <p>
+                http://www.inafed.gob.mx/work/enciclopedia/EMM21puebla/municipios/municipios.html</p> -->
         </div>
     </div>
     <hr>
-    
+
 
     <div class="row" *ngIf="municipioSeleccionado.grafica.length != 0">
-        <h4> Resultados obtenidos en el taller: </h4>
+        <div class="row col-md-12">
+            <h4 class="text-center"> Resultados obtenidos en el taller: </h4>
+        </div>
+
         <div class="row" *ngFor="let item of municipioSeleccionado.grafica; let i=index">
             <div class="col-md-12">
-                <div class="card text-left">
+                <div class="card text-justify">
                     <div class="card-body">
-                        <h4 class="card-title text-center">{{municipioSeleccionado.grafica[i].texto}}</h4>
+                        <h4 class="card-title text-center lead">{{municipioSeleccionado.grafica[i].texto}}</h4>
                         <app-line [lineChartData]="municipioSeleccionado.grafica[i].chartData"
                             [lineChartLabels]="municipioSeleccionado.grafica[i].bChartLab"></app-line>
                         <p class="card-text">descripcion</p>

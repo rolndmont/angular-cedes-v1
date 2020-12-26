@@ -20,6 +20,8 @@ export class GeneralitiesComponent implements OnInit {
   seleccion: boolean = false;
   idRegion!: number;
   idMun!: number;
+  public barChartData3: any[]=[];
+  public barChartData5: any[]=[];
 
   constructor(private _municipioService: MunicipiosService, private router: Router) {
 
@@ -31,6 +33,21 @@ export class GeneralitiesComponent implements OnInit {
     this.Angel = this._municipioService.getAng();
     this.Tehua = this._municipioService.getT();
     this.Mixteca = this._municipioService.getMIX();
+
+    // seccion de carga de graficas sobre declaratorias
+    this.barChartData3.push(this._municipioService.getGraficaDeclaratoria());
+    console.log(this.barChartData3);
+    console.log("VerData3= ", this.barChartData3[0]);
+
+    for (const data in this.barChartData3) {
+      if (Object.prototype.hasOwnProperty.call(this.barChartData3, data)) {
+        this.barChartData5 = this.barChartData3[data];
+        // console.log("Primer for", this.barChartData5);
+
+      }
+    }
+    console.log("VerData5= ", this.barChartData5[0].chartData);
+    
   }
   
   viewRegion( identiRegion: number ){
